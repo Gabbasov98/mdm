@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+    <title>Главная</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <div class="commercial">
+            <div class="commercial__img">
+                <img src="img/commercial.svg" alt="">
+            </div>
+            <button class="commercial__close">
+                <img src="img/close.svg" alt="">
+            </button>
+        </div>
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__middle">
+                        <button class="burger">
+                            <img class="_view1" src="img/burger.svg" alt="">
+                            <img class="_view2" src="img/burger2.svg" alt="">
+                        </button>
+
+                        <a href="" class="header__logo">
+                            <img src="img/logo2.svg" alt="">
+                        </a>
+
+                        <div class="_toggle-catalog header__catalog-btn m-btn m-btn-medium m-btn-primary">
+                            <span class="_icon">
+                    <svg class="_view1" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.49963 11.499C4.49963 11.3664 4.55231 11.2392 4.64608 11.1455C4.73985 11.0517 4.86703 10.999 4.99963 10.999H14.9996C15.1322 10.999 15.2594 11.0517 15.3532 11.1455C15.447 11.2392 15.4996 11.3664 15.4996 11.499C15.4996 11.6316 15.447 11.7588 15.3532 11.8526C15.2594 11.9463 15.1322 11.999 14.9996 11.999H4.99963C4.86703 11.999 4.73985 11.9463 4.64608 11.8526C4.55231 11.7588 4.49963 11.6316 4.49963 11.499ZM2.49963 7.49902C2.49963 7.36642 2.55231 7.23924 2.64608 7.14547C2.73985 7.0517 2.86703 6.99902 2.99963 6.99902H12.9996C13.1322 6.99902 13.2594 7.0517 13.3532 7.14547C13.447 7.23924 13.4996 7.36642 13.4996 7.49902C13.4996 7.63163 13.447 7.75881 13.3532 7.85258C13.2594 7.94634 13.1322 7.99902 12.9996 7.99902H2.99963C2.86703 7.99902 2.73985 7.94634 2.64608 7.85258C2.55231 7.75881 2.49963 7.63163 2.49963 7.49902ZM0.499634 3.49902C0.499634 3.36642 0.552312 3.23924 0.64608 3.14547C0.739849 3.0517 0.867026 2.99902 0.999634 2.99902H10.9996C11.1322 2.99902 11.2594 3.0517 11.3532 3.14547C11.447 3.23924 11.4996 3.36642 11.4996 3.49902C11.4996 3.63163 11.447 3.75881 11.3532 3.85258C11.2594 3.94634 11.1322 3.99902 10.9996 3.99902H0.999634C0.867026 3.99902 0.739849 3.94634 0.64608 3.85258C0.552312 3.75881 0.499634 3.63163 0.499634 3.49902Z" fill="#212529"/>
+                    </svg>
+                    <svg class="_view2" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.292664 0.292593C0.480192 0.105122 0.7345 -0.000193557 0.999664 -0.000193557C1.26483 -0.000193557 1.51914 0.105122 1.70666 0.292593L7.99966 6.58559L14.2927 0.292593C14.3849 0.197083 14.4953 0.1209 14.6173 0.0684915C14.7393 0.0160825 14.8705 -0.0115037 15.0033 -0.0126576C15.136 -0.0138114 15.2677 0.0114903 15.3906 0.0617712C15.5135 0.112052 15.6252 0.186305 15.7191 0.280198C15.813 0.374091 15.8872 0.485743 15.9375 0.608639C15.9878 0.731535 16.0131 0.863215 16.0119 0.995994C16.0108 1.12877 15.9832 1.25999 15.9308 1.382C15.8784 1.504 15.8022 1.61435 15.7067 1.70659L9.41366 7.99959L15.7067 14.2926C15.8888 14.4812 15.9896 14.7338 15.9873 14.996C15.9851 15.2582 15.8799 15.509 15.6945 15.6944C15.5091 15.8798 15.2583 15.985 14.9961 15.9873C14.7339 15.9895 14.4813 15.8888 14.2927 15.7066L7.99966 9.41359L1.70666 15.7066C1.51806 15.8888 1.26546 15.9895 1.00326 15.9873C0.741066 15.985 0.490254 15.8798 0.304846 15.6944C0.119438 15.509 0.0142688 15.2582 0.0119903 14.996C0.00971192 14.7338 0.110506 14.4812 0.292664 14.2926L6.58566 7.99959L0.292664 1.70659C0.105193 1.51907 -0.00012207 1.26476 -0.00012207 0.999593C-0.00012207 0.734429 0.105193 0.480121 0.292664 0.292593Z" fill="#212529"/>
+                    </svg>
+                </span>
+                            <span class="_text">Каталог</span>
+                        </div>
+
+                        <div class="header-search">
+                            <fieldset class="fg">
+                                <input type="text" placeholder="Найдите изделие, категорию, оборудование, материалы и многое другое">
+                            </fieldset>
+                            <button class="header-search__btn m-btn m-btn-medium m-btn-primary">
+                                <img src="img/search.svg" alt="">
+                            </button>
+                        </div>
+
+                        <div class="header-action">
+                            <button class="m-btn m-btn-small">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99966 7.99902C8.79531 7.99902 9.55838 7.68295 10.121 7.12034C10.6836 6.55773 10.9997 5.79467 10.9997 4.99902C10.9997 4.20337 10.6836 3.44031 10.121 2.8777C9.55838 2.31509 8.79531 1.99902 7.99966 1.99902C7.20401 1.99902 6.44095 2.31509 5.87834 2.8777C5.31573 3.44031 4.99966 4.20337 4.99966 4.99902C4.99966 5.79467 5.31573 6.55773 5.87834 7.12034C6.44095 7.68295 7.20401 7.99902 7.99966 7.99902ZM9.99966 4.99902C9.99966 5.52946 9.78895 6.03816 9.41388 6.41324C9.0388 6.78831 8.5301 6.99902 7.99966 6.99902C7.46923 6.99902 6.96052 6.78831 6.58545 6.41324C6.21038 6.03816 5.99966 5.52946 5.99966 4.99902C5.99966 4.46859 6.21038 3.95988 6.58545 3.58481C6.96052 3.20974 7.46923 2.99902 7.99966 2.99902C8.5301 2.99902 9.0388 3.20974 9.41388 3.58481C9.78895 3.95988 9.99966 4.46859 9.99966 4.99902ZM13.9997 12.999C13.9997 13.999 12.9997 13.999 12.9997 13.999H2.99966C2.99966 13.999 1.99966 13.999 1.99966 12.999C1.99966 11.999 2.99966 8.99902 7.99966 8.99902C12.9997 8.99902 13.9997 11.999 13.9997 12.999ZM12.9997 12.995C12.9987 12.749 12.8457 12.009 12.1677 11.331C11.5157 10.679 10.2887 9.99902 7.99966 9.99902C5.70966 9.99902 4.48366 10.679 3.83166 11.331C3.15366 12.009 3.00166 12.749 2.99966 12.995H12.9997Z" fill="#495057" />
+                                </svg>
+                                <span>Руслан</span>
+                            </button>
+                            <button class="m-btn m-btn-small">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.99966 6.23502L7.10566 4.44602C6.88366 4.00302 6.49866 3.36602 5.95366 2.85102C5.41766 2.34402 4.77566 1.99902 3.99966 1.99902C2.32366 1.99902 0.999664 3.32502 0.999664 4.91902C0.999664 6.13002 1.55366 6.98502 2.86766 8.28902C3.20466 8.62302 3.58866 8.98402 4.01366 9.38202C5.12166 10.422 6.49966 11.716 7.99966 13.446C9.49966 11.716 10.8777 10.422 11.9857 9.38202C12.4107 8.98402 12.7957 8.62202 13.1317 8.28902C14.4457 6.98502 14.9997 6.13002 14.9997 4.91902C14.9997 3.32502 13.6757 1.99902 11.9997 1.99902C11.2227 1.99902 10.5817 2.34402 10.0457 2.85102C9.50066 3.36602 9.11566 4.00302 8.89366 4.44602L7.99966 6.23502ZM8.39166 14.527C8.34351 14.5841 8.28348 14.6299 8.21578 14.6614C8.14807 14.6928 8.07432 14.7091 7.99966 14.7091C7.92501 14.7091 7.85126 14.6928 7.78355 14.6614C7.71585 14.6299 7.65582 14.5841 7.60766 14.527C6.00666 12.625 4.55766 11.265 3.36466 10.146C1.29966 8.20702 -0.000335693 6.98802 -0.000335693 4.91902C-0.000335693 2.75402 1.78966 0.999023 3.99966 0.999023C5.59966 0.999023 6.71866 2.04902 7.40366 3.00702C7.66366 3.37202 7.86166 3.72302 7.99966 3.99902C8.17266 3.6536 8.37191 3.32195 8.59566 3.00702C9.28066 2.04802 10.3997 0.999023 11.9997 0.999023C14.2097 0.999023 15.9997 2.75402 15.9997 4.91902C15.9997 6.98802 14.6997 8.20702 12.6347 10.146C11.4417 11.266 9.99266 12.626 8.39166 14.526V14.527Z" fill="#495057" />
+                                </svg>
+                                <span>Избранное</span>
+                            </button>
+                            <button class="m-btn m-btn-small">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M-0.000350952 2.49902C-0.000350952 2.36642 0.0523275 2.23924 0.146096 2.14547C0.239864 2.0517 0.367041 1.99902 0.499649 1.99902H1.99965C2.11118 1.99905 2.2195 2.03637 2.30738 2.10505C2.39526 2.17372 2.45766 2.26981 2.48465 2.37802L2.88965 3.99902H14.4996C14.5756 3.99904 14.6505 4.01637 14.7188 4.04968C14.7871 4.08299 14.8468 4.13141 14.8936 4.19126C14.9403 4.25112 14.9728 4.32084 14.9886 4.39513C15.0044 4.46942 15.003 4.54633 14.9846 4.62002L13.4846 10.62C13.4577 10.7282 13.3953 10.8243 13.3074 10.893C13.2195 10.9617 13.1112 10.999 12.9996 10.999H3.99965C3.88812 10.999 3.7798 10.9617 3.69192 10.893C3.60404 10.8243 3.54164 10.7282 3.51465 10.62L1.60965 2.99902H0.499649C0.367041 2.99902 0.239864 2.94634 0.146096 2.85258C0.0523275 2.75881 -0.000350952 2.63163 -0.000350952 2.49902ZM3.13965 4.99902L4.38965 9.99902H12.6096L13.8596 4.99902H3.13965ZM4.99965 12.999C4.73443 12.999 4.48008 13.1044 4.29254 13.2919C4.10501 13.4795 3.99965 13.7338 3.99965 13.999C3.99965 14.2642 4.10501 14.5186 4.29254 14.7061C4.48008 14.8937 4.73443 14.999 4.99965 14.999C5.26487 14.999 5.51922 14.8937 5.70676 14.7061C5.89429 14.5186 5.99965 14.2642 5.99965 13.999C5.99965 13.7338 5.89429 13.4795 5.70676 13.2919C5.51922 13.1044 5.26487 12.999 4.99965 12.999ZM2.99965 13.999C2.99965 13.4686 3.21036 12.9599 3.58544 12.5848C3.96051 12.2097 4.46922 11.999 4.99965 11.999C5.53008 11.999 6.03879 12.2097 6.41386 12.5848C6.78894 12.9599 6.99965 13.4686 6.99965 13.999C6.99965 14.5295 6.78894 15.0382 6.41386 15.4132C6.03879 15.7883 5.53008 15.999 4.99965 15.999C4.46922 15.999 3.96051 15.7883 3.58544 15.4132C3.21036 15.0382 2.99965 14.5295 2.99965 13.999ZM11.9996 12.999C11.7344 12.999 11.4801 13.1044 11.2925 13.2919C11.105 13.4795 10.9996 13.7338 10.9996 13.999C10.9996 14.2642 11.105 14.5186 11.2925 14.7061C11.4801 14.8937 11.7344 14.999 11.9996 14.999C12.2649 14.999 12.5192 14.8937 12.7068 14.7061C12.8943 14.5186 12.9996 14.2642 12.9996 13.999C12.9996 13.7338 12.8943 13.4795 12.7068 13.2919C12.5192 13.1044 12.2649 12.999 11.9996 12.999ZM9.99965 13.999C9.99965 13.4686 10.2104 12.9599 10.5854 12.5848C10.9605 12.2097 11.4692 11.999 11.9996 11.999C12.5301 11.999 13.0388 12.2097 13.4139 12.5848C13.7889 12.9599 13.9996 13.4686 13.9996 13.999C13.9996 14.5295 13.7889 15.0382 13.4139 15.4132C13.0388 15.7883 12.5301 15.999 11.9996 15.999C11.4692 15.999 10.9605 15.7883 10.5854 15.4132C10.2104 15.0382 9.99965 14.5295 9.99965 13.999Z" fill="#495057" />
+                                </svg>
+                                <span>Корзина</span>
+                            </button>
+                        </div>
+
+                        <button class="mob-search">
+                            <img class="_view1" src="img/search2.svg" alt="">
+                            <img class="_view2" src="img/burger2.svg" alt="">
+                        </button>
+                    </div>
+
+                    <div class="header__mob-menu">
+                        <div class="header__top">
+                            <div class="site-config" data-modal="configModal">
+                                <button class="site-config__btn m-btn m-btn-small">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.5633 2.13685C10.6169 2.1905 10.653 2.25915 10.6668 2.33373C10.6806 2.40832 10.6714 2.48533 10.6405 2.5546L6.39778 12.1006C6.36813 12.1674 6.31963 12.224 6.25824 12.2636C6.19684 12.3032 6.12523 12.324 6.05218 12.3234C5.97913 12.3229 5.90784 12.301 5.84706 12.2605C5.78627 12.2199 5.73865 12.1626 5.71003 12.0954L4.17928 8.52085L0.604025 6.98935C0.537069 6.96055 0.479957 6.91286 0.439674 6.85212C0.39939 6.79138 0.377683 6.72021 0.377205 6.64732C0.376728 6.57444 0.397502 6.50299 0.436985 6.44173C0.476469 6.38046 0.532952 6.33203 0.599525 6.30235L10.1455 2.0596C10.2147 2.02889 10.2916 2.01983 10.366 2.03362C10.4404 2.04741 10.5089 2.08339 10.5625 2.13685H10.5633ZM1.68928 6.63835L4.61203 7.89085C4.70041 7.92895 4.77077 7.99957 4.80853 8.0881L6.06103 11.0109L9.55903 3.14035L1.68928 6.63835Z" fill="#495057" />
+                                    </svg>
+                                    <span>Москва</span>
+                                </button>
+                                <button class="site-config__btn m-btn m-btn-small">
+                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.501709 6.5C0.501709 4.9087 1.13385 3.38258 2.25907 2.25736C3.38429 1.13214 4.91041 0.5 6.50171 0.5C8.09301 0.5 9.61913 1.13214 10.7444 2.25736C11.8696 3.38258 12.5017 4.9087 12.5017 6.5C12.5017 8.0913 11.8696 9.61742 10.7444 10.7426C9.61913 11.8679 8.09301 12.5 6.50171 12.5C4.91041 12.5 3.38429 11.8679 2.25907 10.7426C1.13385 9.61742 0.501709 8.0913 0.501709 6.5ZM6.12671 1.30775C5.62421 1.46075 5.12546 1.92275 4.71146 2.699C4.60421 2.9 4.50446 3.119 4.41521 3.353C4.94396 3.47075 5.51921 3.54575 6.12671 3.56825V1.30775ZM3.68846 3.15425C3.79496 2.86625 3.91646 2.59625 4.04921 2.34575C4.17889 2.10054 4.32865 1.86649 4.49696 1.646C3.85846 1.9106 3.2784 2.2985 2.78996 2.7875C3.06146 2.9255 3.36221 3.04925 3.68846 3.155V3.15425ZM3.13346 6.125C3.16046 5.3225 3.27446 4.55975 3.46046 3.869C3.05448 3.73917 2.66153 3.57169 2.28671 3.36875C1.68937 4.17076 1.33482 5.1274 1.26521 6.125H3.13271H3.13346ZM4.18346 4.06925C4.00665 4.74107 3.90601 5.43066 3.88346 6.125H6.12671V4.31825C5.44421 4.29575 4.78946 4.2095 4.18346 4.06925ZM6.87671 4.3175V6.125H9.11921C9.09691 5.43069 8.99653 4.7411 8.81996 4.06925C8.21396 4.2095 7.55921 4.295 6.87671 4.31825V4.3175ZM3.88421 6.875C3.91046 7.61525 4.01621 8.3105 4.18346 8.93075C4.82175 8.7859 5.4725 8.70277 6.12671 8.6825V6.875H3.88421ZM6.87671 6.875V8.68175C7.55921 8.70425 8.21396 8.7905 8.81996 8.93075C8.98721 8.3105 9.09296 7.61525 9.11996 6.875H6.87671ZM4.41521 9.647C4.50521 9.881 4.60421 10.1 4.71146 10.301C5.12546 11.0772 5.62496 11.5385 6.12671 11.6923V9.4325C5.51921 9.455 4.94396 9.53 4.41521 9.64775V9.647ZM4.49771 11.354C4.32913 11.1335 4.17912 10.8995 4.04921 10.6542C3.91108 10.3928 3.79056 10.1225 3.68846 9.845C3.37993 9.94415 3.07954 10.067 2.78996 10.2125C3.2784 10.7015 3.85846 11.0894 4.49696 11.354H4.49771ZM3.46046 9.131C3.26574 8.39392 3.15578 7.63702 3.13271 6.875H1.26521C1.33478 7.8726 1.68933 8.82926 2.28671 9.63125C2.63921 9.43775 3.03296 9.26975 3.46046 9.131ZM8.50646 11.354C9.14464 11.0896 9.72444 10.7019 10.2127 10.2133C9.92338 10.0678 9.62323 9.94493 9.31496 9.84575C9.21283 10.123 9.09231 10.3931 8.95421 10.6542C8.82456 10.8995 8.6748 11.1335 8.50646 11.354ZM6.87671 9.43175V11.6923C7.37921 11.5393 7.87796 11.0772 8.29196 10.301C8.39921 10.1 8.49896 9.881 8.58821 9.647C8.02542 9.5236 7.45255 9.4518 6.87671 9.4325V9.43175ZM9.54296 9.131C9.97046 9.26975 10.3642 9.43775 10.7167 9.63125C11.3141 8.82926 11.6686 7.8726 11.7382 6.875H9.87071C9.84764 7.63702 9.73768 8.39392 9.54296 9.131ZM11.7382 6.125C11.6686 5.1274 11.3141 4.17074 10.7167 3.36875C10.3642 3.56225 9.97046 3.73025 9.54296 3.869C9.72896 4.559 9.84296 5.3225 9.87071 6.125H11.7382ZM8.95421 2.34575C9.08696 2.59625 9.20846 2.86625 9.31571 3.15425C9.62374 3.05506 9.92363 2.93219 10.2127 2.78675C9.72436 2.29837 9.14457 1.91099 8.50646 1.64675C8.66996 1.859 8.81996 2.0945 8.95421 2.34575ZM8.58821 3.353C8.503 3.12911 8.40407 2.9107 8.29196 2.699C7.87796 1.92275 7.37921 1.4615 6.87671 1.30775V3.5675C7.48421 3.545 8.05946 3.47 8.58821 3.35225V3.353Z" fill="#495057" />
+                                    </svg>
+                                    <span>Ru</span>
+                                </button>
+                            </div>
+
+
+                            <nav class="nav">
+                                <a href="" class="nav__link m-btn m-btn-small"><span>Контакты</span></a>
+                                <a href="" class="nav__link m-btn m-btn-small"><span>Оплата</span></a>
+                                <a href="" class="nav__link m-btn m-btn-small"><span>Доставка</span></a>
+                                <a href="" class="nav__link m-btn m-btn-small"><span>Требования к макетам</span></a>
+                            </nav>
+
+                            <div class="header-contacts">
+                                <a href="mailto:zakaz@mdmprint.ru" class="nav__link m-btn m-btn-small"><span>zakaz@mdmprint.ru</span></a>
+                                <a href="tel:+74952561000" class="nav__link m-btn m-btn-small"><span>+7 (495) 256-10-00</span></a>
+                                <button class="header-contacts__btn m-btn m-btn-small m-btn-primary"><span>Быстрый заказ</span></button>
+                            </div>
+                        </div>
+
+                        <div class="header__bottom nav2">
+                            <button class="nav2__link _mob-hide"><span>Каталог</span></button>
+                            <a href="" class="nav2__link"><span>Портфолио</span></a>
+                            <a href="" class="nav2__link"><span>🔥Акции</span></a>
+                            <a href="" class="nav2__link"><span>Оборудование</span></a>
+                            <a href="" class="nav2__link"><span>Материалы</span></a>
+                            <a href="" class="nav2__link"><span>Техпроцессы</span></a>
+                            <a href="" class="nav2__link"><span>Блог</span></a>
+                            <a href="" class="nav2__link"><span>Товары</span></a>
+                            <div class="nav2__item">
+                                <div class="nav2__show">
+                                    <span>Информация</span>
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.41787 6.96152L2.42037 3.53527C2.06662 3.13215 2.35412 2.49902 2.891 2.49902H8.886C9.00615 2.49892 9.12378 2.53345 9.22482 2.59849C9.32585 2.66352 9.40599 2.7563 9.45565 2.86571C9.50531 2.97512 9.52238 3.09652 9.50482 3.21538C9.48725 3.33425 9.4358 3.44553 9.35662 3.5359L6.35912 6.9609C6.30046 7.02803 6.22811 7.08183 6.14694 7.1187C6.06577 7.15556 5.97765 7.17464 5.8885 7.17464C5.79934 7.17464 5.71122 7.15556 5.63005 7.1187C5.54888 7.08183 5.47653 7.02803 5.41787 6.9609V6.96152Z" fill="#495057" />
+                                    </svg>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown__inner">
+                                        <a href="" class="dropdown__link">menu item</a>
+                                        <a href="" class="dropdown__link">menu item</a>
+                                        <a href="" class="dropdown__link">menu item</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav2__item">
+                                <div class="nav2__show">
+                                    <span>Обратная связь</span>
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.41787 6.96152L2.42037 3.53527C2.06662 3.13215 2.35412 2.49902 2.891 2.49902H8.886C9.00615 2.49892 9.12378 2.53345 9.22482 2.59849C9.32585 2.66352 9.40599 2.7563 9.45565 2.86571C9.50531 2.97512 9.52238 3.09652 9.50482 3.21538C9.48725 3.33425 9.4358 3.44553 9.35662 3.5359L6.35912 6.9609C6.30046 7.02803 6.22811 7.08183 6.14694 7.1187C6.06577 7.15556 5.97765 7.17464 5.8885 7.17464C5.79934 7.17464 5.71122 7.15556 5.63005 7.1187C5.54888 7.08183 5.47653 7.02803 5.41787 6.9609V6.96152Z" fill="#495057" />
+                                    </svg>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown__inner">
+                                        <a href="" class="dropdown__link">menu item</a>
+                                        <a href="" class="dropdown__link">menu item</a>
+                                        <a href="" class="dropdown__link">menu item</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav2__item">
+                                <div class="nav2__show">
+                                    <span>О компании</span>
+                                    <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.41787 6.96152L2.42037 3.53527C2.06662 3.13215 2.35412 2.49902 2.891 2.49902H8.886C9.00615 2.49892 9.12378 2.53345 9.22482 2.59849C9.32585 2.66352 9.40599 2.7563 9.45565 2.86571C9.50531 2.97512 9.52238 3.09652 9.50482 3.21538C9.48725 3.33425 9.4358 3.44553 9.35662 3.5359L6.35912 6.9609C6.30046 7.02803 6.22811 7.08183 6.14694 7.1187C6.06577 7.15556 5.97765 7.17464 5.8885 7.17464C5.79934 7.17464 5.71122 7.15556 5.63005 7.1187C5.54888 7.08183 5.47653 7.02803 5.41787 6.9609V6.96152Z" fill="#495057" />
+                                    </svg>
+                                </div>
+                                <div class="dropdown">
+                                    <div class="dropdown__inner">
+                                        <a href="" class="dropdown__link">menu item</a>
+                                        <a href="" class="dropdown__link">menu item</a>
+                                        <a href="" class="dropdown__link">menu item</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <section class="main">
+                <div class="container">
+                    <div class="main-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="main-slider__img" src="img/banner.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="main-slider__img" src="img/banner.webp" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="main-slider__img" src="img/banner.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categories _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Популярные категории
+                    </div>
+                    <div class="_section__grid grid-column6">
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Флаера
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    NFC визитки
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category2.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Упаковки
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category3.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Голографические стикеры
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category4.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Буклеты
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category5.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Печать на футболках
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category6.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Визитки
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category7.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Баннеры
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category8.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Стикеры на листах
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category9.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Приглашения
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category10.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Штампы
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category11.webp" alt="">
+                            </div>
+                        </a>
+
+                        <a href="" class="category-card _card">
+                            <div class="category-card__top">
+                                <div class="category-card__title text16 medium-text">
+                                    Печать на сувенирах
+                                </div>
+                            </div>
+                            <div class="category-card__img">
+                                <img src="img/category12.webp" alt="">
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="filial _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Контакты типографии и копировального центра
+                    </div>
+                    <div class="_section__grid grid-column2">
+                        <div class="filial-card">
+                            <div class="filial-card__map">
+                                <div class="map" data-cord1="55.702673" data-cord2="37.630481">
+                                </div>
+                            </div>
+                            <div class="filial-card__content">
+                                <div class="text20 medium-text">
+                                    Типография МДМпринт
+                                </div>
+                                <div class="text14 gray-text">
+                                    Пн - Пт : 10:00 - 19:00 <br> Сб, Вс. : выходные. <br> Заказы при клиенте не изготавливаются.
+                                </div>
+                                <div class="text16 lh150">
+                                    Москва, ул. Автозаводская, 25
+                                </div>
+                                <div class="filial-card__metro">
+                                    <i style="background: #999999;"></i>
+                                    <span class="text16 lh150">
+                Тульская
+            </span>
+                                </div>
+                                <div class="filial-card__contacts">
+                                    <a href="tel:+7 (495) 256-10-00" class="primary-link text16 lh150">
+                                        +7 (495) 256-10-00 (доб. 200)
+                                    </a>
+                                </div>
+                                <div class="filial-card__nav">
+                                    <button class="filial-card__btn m-btn m-btn-medium m-btn-primary">
+                                        <span>Построить маршрут</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filial-card">
+                            <div class="filial-card__map">
+                                <div class="map" data-cord1="55.759294" data-cord2="37.752490">
+                                </div>
+                            </div>
+                            <div class="filial-card__content">
+                                <div class="text20 medium-text">
+                                    Копицентр Шоссе Энтузиастов
+                                </div>
+                                <div class="text14 gray-text">
+                                    Пн-Пт: с 10:00 до 20:00 <br>Сб-Вс: выходные <br> 4 ноября: выходной
+                                </div>
+                                <div class="text16 lh150">
+                                    Москва, Шоссе Энтузиастов, д. 31, стр. 38, пав. Б8
+                                </div>
+                                <div class="filial-card__metro">
+                                    <i style="background: #FFD702;"></i>
+                                    <span class="text16 lh150">
+                Шоссе Энтузиастов
+            </span>
+                                </div>
+                                <div class="filial-card__contacts">
+                                    <a href="tel:+7 (495) 256-10-00" class="primary-link text16 lh150">
+                                        +7 (495) 256-10-00 (доб. 200)
+                                    </a>
+                                </div>
+                                <div class="filial-card__nav">
+                                    <button class="filial-card__btn m-btn m-btn-medium m-btn-primary">
+                                        <span>Построить маршрут</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Портфолио
+                    </div>
+                    <div class="_slider portfolio-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-card__img">
+                                            <img src="img/portfolio.webp" alt="">
+                                        </div>
+                                        <div class="portfolio-card__heart">
+                                            <img src="img/heart.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-card__img">
+                                            <img src="img/portfolio2.webp" alt="">
+                                        </div>
+                                        <div class="portfolio-card__heart">
+                                            <img src="img/heart.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-card__img">
+                                            <img src="img/portfolio3.webp" alt="">
+                                        </div>
+                                        <div class="portfolio-card__heart">
+                                            <img src="img/heart.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-card__img">
+                                            <img src="img/portfolio4.webp" alt="">
+                                        </div>
+                                        <div class="portfolio-card__heart">
+                                            <img src="img/heart.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="portfolio-card">
+                                        <div class="portfolio-card__img">
+                                            <img src="img/portfolio4.webp" alt="">
+                                        </div>
+                                        <div class="portfolio-card__heart">
+                                            <img src="img/heart.svg" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="balls _section">
+                <div class="container">
+                    <div class="balls__img">
+                        <img class="_view1" src="img/balls.png" alt="">
+                        <img class="_view2" src="img/balls2.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section class="products _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Популярные материалы
+                    </div>
+                    <div class="_slider products-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                ELEGOO 1.75 мм PLA
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product2.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                CREALITY 3D Ender PLA
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product3.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                Коробка упаковочная RQi
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product4.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                Коробка упаковочная SquareKraft
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                ELEGOO 1.75 мм PLA
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product2.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                CREALITY 3D Ender PLA
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product3.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                CREALITY 3D Ender PLA
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantages _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Преимущества
+                    </div>
+                    <div class="_slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="advantage-card">
+                                        <div class="advantage-card__top">
+                                            <div class="advantage-card__icon">
+                                                <img src="img/advantage-icon.svg" alt="">
+                                            </div>
+                                            <div class="advantage-card__title text20 medium-text">
+                                                Скидки для студентов
+                                            </div>
+                                        </div>
+                                        <div class="advantage-card__desc text16 lh150">
+                                            Скидка студентам на услуги копировальных центров при предъявлении студенческого билета.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantage-card">
+                                        <div class="advantage-card__top">
+                                            <div class="advantage-card__icon">
+                                                <img src="img/advantage-icon2.svg" alt="">
+                                            </div>
+                                            <div class="advantage-card__title text20 medium-text">
+                                                Копицентры у метро
+                                            </div>
+                                        </div>
+                                        <div class="advantage-card__desc text16 lh150">
+                                            Все копировальные центры находятся в шаговой доступности от станций метро.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantage-card">
+                                        <div class="advantage-card__top">
+                                            <div class="advantage-card__icon">
+                                                <img src="img/advantage-icon3.svg" alt="">
+                                            </div>
+                                            <div class="advantage-card__title text20 medium-text">
+                                                Работаем без выходных
+                                            </div>
+                                        </div>
+                                        <div class="advantage-card__desc text16 lh150">
+                                            Копировальные центры COPY.RU работают ежедневно и без выходных, есть круглосуточные копицентры.
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantage-card">
+                                        <div class="advantage-card__top">
+                                            <div class="advantage-card__icon">
+                                                <img src="img/advantage-icon4.svg" alt="">
+                                            </div>
+                                            <div class="advantage-card__title text20 medium-text">
+                                                Оплата любым способом
+                                            </div>
+                                        </div>
+                                        <div class="advantage-card__desc text16 lh150">
+                                            Вы можете оплатить услуги копицентра наличными, картой, онлайн или по счёту.
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="processes _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Техпроцессы
+                    </div>
+                    <div class="_slider processes-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="process-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/process.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="text16 medium-text">
+                                                Блок, комплектовка подборкой
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="process-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/process2.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="text16 medium-text">
+                                                Вакуумформовка
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="process-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/process3.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="text16 medium-text">
+                                                Вёрстка
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="process-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/process4.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="text16 medium-text">
+                                                Вёрстка полос электронная
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="process-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/process4.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="text16 medium-text">
+                                                Вёрстка полос электронная
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="socials _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Мы в соцсетях
+                    </div>
+                    <div class="socials__grid _section__grid grid-column4">
+                        <div class="socials-slider">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="" class="social-card">
+                                            <div data-id="1" class="social-card__wrap">
+                                                <div class="social-card__top">
+                                                    <div class="social-card__icon">
+                                                        <img src="img/social.svg" alt="">
+                                                    </div>
+                                                    <div class="social-card__title text20 medium-text">
+                                                        Instagram
+                                                    </div>
+                                                    <div class="social-card__arrow">
+                                                        <img src="img/arrow.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text16 lh150 gray-text600">
+                                                    @mdmprint.ru
+                                                </div>
+                                            </div>
+                                            <div data-id="1" class="social-card__img">
+                                                <img class="_view1" src="img/social-img.webp" alt="">
+                                                <img class="_view2" src="img/social-img2.webp" alt="">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="social-card">
+                                            <div data-id="2" class="social-card__wrap">
+                                                <div class="social-card__top">
+                                                    <div class="social-card__icon">
+                                                        <img src="img/social.svg" alt="">
+                                                    </div>
+                                                    <div class="social-card__title text20 medium-text">
+                                                        ВКонтакте
+                                                    </div>
+                                                    <div class="social-card__arrow">
+                                                        <img src="img/arrow.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text16 lh150 gray-text600">
+                                                    @mdmprint.ru
+                                                </div>
+                                            </div>
+                                            <div data-id="2" class="social-card__img">
+                                                <img class="_view1" src="img/social-img.webp" alt="">
+                                                <img class="_view2" src="img/social-img2.webp" alt="">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="social-card">
+                                            <div data-id="3" class="social-card__wrap">
+                                                <div class="social-card__top">
+                                                    <div class="social-card__icon">
+                                                        <img src="img/social2.svg" alt="">
+                                                    </div>
+                                                    <div class="social-card__title text20 medium-text">
+                                                        Pinterest
+                                                    </div>
+                                                    <div class="social-card__arrow">
+                                                        <img src="img/arrow.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text16 lh150 gray-text600">
+                                                    @mdmprint.ru
+                                                </div>
+                                            </div>
+                                            <div data-id="3" class="social-card__img">
+                                                <img class="_view1" src="img/social-img.webp" alt="">
+                                                <img class="_view2" src="img/social-img2.webp" alt="">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="social-card">
+                                            <div data-id="4" class="social-card__wrap">
+                                                <div class="social-card__top">
+                                                    <div class="social-card__icon">
+                                                        <img src="img/social3.svg" alt="">
+                                                    </div>
+                                                    <div class="social-card__title text20 medium-text">
+                                                        Telegram
+                                                    </div>
+                                                    <div class="social-card__arrow">
+                                                        <img src="img/arrow.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text16 lh150 gray-text600">
+                                                    @mdmprint.ru
+                                                </div>
+                                            </div>
+                                            <div data-id="4" class="social-card__img">
+                                                <img class="_view1" src="img/social-img.webp" alt="">
+                                                <img class="_view2" src="img/social-img2.webp" alt="">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="social-card">
+                                            <div data-id="5" class="social-card__wrap">
+                                                <div class="social-card__top">
+                                                    <div class="social-card__icon">
+                                                        <img src="img/social4.svg" alt="">
+                                                    </div>
+                                                    <div class="social-card__title text20 medium-text">
+                                                        Facebook
+                                                    </div>
+                                                    <div class="social-card__arrow">
+                                                        <img src="img/arrow.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text16 lh150 gray-text600">
+                                                    @mdmprint.ru
+                                                </div>
+                                            </div>
+                                            <div data-id="5" class="social-card__img">
+                                                <img class="_view1" src="img/social-img.webp" alt="">
+                                                <img class="_view2" src="img/social-img2.webp" alt="">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="" class="social-card">
+                                            <div data-id="6" class="social-card__wrap">
+                                                <div class="social-card__top">
+                                                    <div class="social-card__icon">
+                                                        <img src="img/social4.svg" alt="">
+                                                    </div>
+                                                    <div class="social-card__title text20 medium-text">
+                                                        Facebook
+                                                    </div>
+                                                    <div class="social-card__arrow">
+                                                        <img src="img/arrow.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="text16 lh150 gray-text600">
+                                                    @mdmprint.ru
+                                                </div>
+                                            </div>
+                                            <div data-id="6" class="social-card__img">
+                                                <img class="_view1" src="img/social-img.webp" alt="">
+                                                <img class="_view2" src="img/social-img2.webp" alt="">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="news _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Новости
+                    </div>
+                    <div class="_slider news-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="" class="news-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/news.webp" alt="">
+                                        </div>
+                                        <div class="news-card__content _card1__content">
+                                            <div class="news-card__title">
+                                                <div class="text20 medium-text">
+                                                    День открытых дверей в МДМпринт
+                                                </div>
+                                            </div>
+                                            <div class="news-card__info">
+                                                <div class="news-card__info-item gray-text600">
+                                                    <span class="text16">12.04.2023</span>
+                                                </div>
+                                                <div class="news-card__info-item gray-text600">
+                                                    <img src="img/view.svg" alt="">
+                                                    <span class="text16">1 300</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="news-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/news.webp" alt="">
+                                        </div>
+                                        <div class="news-card__content _card1__content">
+                                            <div class="news-card__title">
+                                                <div class="text20 medium-text">
+                                                    День открытых дверей в МДМпринт
+                                                </div>
+                                            </div>
+                                            <div class="news-card__info">
+                                                <div class="news-card__info-item gray-text600">
+                                                    <span class="text16">12.04.2023</span>
+                                                </div>
+                                                <div class="news-card__info-item gray-text600">
+                                                    <img src="img/view.svg" alt="">
+                                                    <span class="text16">1 300</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="news-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/news.webp" alt="">
+                                        </div>
+                                        <div class="news-card__content _card1__content">
+                                            <div class="news-card__title">
+                                                <div class="text20 medium-text">
+                                                    День открытых дверей в МДМпринт
+                                                </div>
+                                            </div>
+                                            <div class="news-card__info">
+                                                <div class="news-card__info-item gray-text600">
+                                                    <span class="text16">12.04.2023</span>
+                                                </div>
+                                                <div class="news-card__info-item gray-text600">
+                                                    <img src="img/view.svg" alt="">
+                                                    <span class="text16">1 300</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="products _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Популярное оборудование
+                    </div>
+                    <div class="_slider products-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product5.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                Flying Bear Ghost 6 3d Printer Fast Printing with High Precision Printers Direct Extruder Core XY Fuction Machine
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product6.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                SV01 Pro Dual Z-axis Auto-Leveling FDM 3D Printer Metal Direct Drive Extruder Silent Board Larger Build Volume impresora 3d
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product7.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                FLYING BEAR Aone 2 Easy Leaning High Precision 3D Printer Machine DIY Kit Printing Size 190*190*190mm
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product8.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                CREALITY 3D Printer K1/K1-MAX 3D Printer
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product5.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                Flying Bear Ghost 6 3d Printer Fast Printing with High Precision Printers Direct Extruder Core XY Fuction Machine
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product6.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                SV01 Pro Dual Z-axis Auto-Leveling FDM 3D Printer Metal Direct Drive Extruder Silent Board Larger Build Volume impresora 3d
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="" class="product-card _card _card1">
+                                        <div class="_card1__img">
+                                            <img src="img/product8.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="product-card__title text16 medium-text">
+                                                CREALITY 3D Printer K1/K1-MAX 3D Printer
+                                            </div>
+                                        </div>
+
+                                        <div class="badge">
+                                            <span class="text12 bold-text">-20%</span>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="promo _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Акции
+                    </div>
+                    <div class="_slider promo-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="promo-card _card _card1">
+                                        <div class="promo-card__img _card1__img">
+                                            <img src="img/promo.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="promo-card__text text16 lh150">
+                                                Станьте владельцем виртуальной Клубной карты, накапливайте кэшбэк баллы (1 балл = 1 рубль) и оплачивайте ими до 30% стоимости заказа. Оформить карту можно напрямую в любом из наших копировальных центров. Присоединяйтесь!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="promo-card _card _card1">
+                                        <div class="promo-card__img _card1__img">
+                                            <img src="img/promo3.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="promo-card__text text16 lh150">
+                                                Акция распространяется на заказы суммой от 20000 руб, оформленные на основном производстве типографии в Москве. Один экземпляр цветопробы остаётся в качестве образца на производстве, второй передаём заказчику.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="promo-card _card _card1">
+                                        <div class="promo-card__img _card1__img">
+                                            <img src="img/promo.webp" alt="">
+                                        </div>
+                                        <div class="_card1__content">
+                                            <div class="promo-card__text text16 lh150">
+                                                Станьте владельцем виртуальной Клубной карты, накапливайте кэшбэк баллы (1 балл = 1 рубль) и оплачивайте ими до 30% стоимости заказа. Оформить карту можно напрямую в любом из наших копировальных центров. Присоединяйтесь!
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="certificates _section">
+                <div class="container">
+                    <div class="text32 medium-text">
+                        Нас благодарят
+                    </div>
+                    <div class="_slider certificates-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate.webp" class="certificate-card__img">
+                                            <img src="img/certificate.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate2.webp" class="certificate-card__img">
+                                            <img src="img/certificate2.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate3.webp" class="certificate-card__img">
+                                            <img src="img/certificate3.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate4.webp" class="certificate-card__img">
+                                            <img src="img/certificate4.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate5.webp" class="certificate-card__img">
+                                            <img src="img/certificate5.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate6.webp" class="certificate-card__img">
+                                            <img src="img/certificate6.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="certificate-card">
+                                        <a data-fancybox="certificates" href="img/certificate6.webp" class="certificate-card__img">
+                                            <img src="img/certificate6.webp" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button swiper-button-prev"><img src="img/prev.svg" alt=""></div>
+                        <div class="swiper-button swiper-button-next"><img src="img/next.svg" alt=""></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer-contacts">
+                            <div class="text20 medium-text">
+                                Контакты
+                            </div>
+                            <div class="footer-contacts__wrap">
+                                <div class="footer-contacts__col">
+                                    <div class="text16 lh150 bold-text gray-text600">
+                                        Офис и производство
+                                    </div>
+                                    <div class="footer-contacts__items">
+                                        <div class="footer-contacts__item">
+                                            <span class="text16 lh150">Москва, улица Автозаводская, 25</span>
+                                        </div>
+                                        <div class="footer-contacts__item">
+                                            <a href="tel:+74952561000" class="text16 lh150">+7 (495) 256-10-00</a>
+                                        </div>
+                                        <div class="footer-contacts__item">
+                                            <a href="mailto:zakaz@mdmprint.ru" class="text16 lh150">zakaz@mdmprint.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-contacts__col">
+                                    <div class="text16 lh150 bold-text gray-text600">
+                                        Копицентр на Фрунзенской
+                                    </div>
+                                    <div class="footer-contacts__items">
+                                        <div class="footer-contacts__item">
+                                            <span class="text16 lh150">Москва, Комсомольский проспект, 28</span>
+                                        </div>
+                                        <div class="footer-contacts__item">
+                                            <a href="tel:+74952561000" class="text16 lh150">+7 (495) 256-10-00</a>
+                                        </div>
+                                        <div class="footer-contacts__item">
+                                            <a href="mailto:zakaz@mdmprint.ru" class="text16 lh150">zakaz@mdmprint.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-socials">
+                            <div class="text20 medium-text">
+                                Мы в соцсетях
+                            </div>
+                            <div class="footer-socials__wrap">
+                                <a href="" class="footer-socials__item">
+                                    <img src="img/social-icon.svg" alt="">
+                                </a>
+                                <a href="" class="footer-socials__item">
+                                    <img src="img/social-icon2.svg" alt="">
+                                </a>
+                                <a href="" class="footer-socials__item">
+                                    <img src="img/social-icon3.svg" alt="">
+                                </a>
+                                <a href="" class="footer-socials__item">
+                                    <img src="img/social-icon4.svg" alt="">
+                                </a>
+                                <a href="" class="footer-socials__item">
+                                    <img src="img/social-icon5.svg" alt="">
+                                </a>
+                                <a href="" class="footer-socials__item">
+                                    <img src="img/social-icon6.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <form class="footer-search">
+                            <div class="text20 medium-text">
+                                Мы в соцсетях
+                            </div>
+                            <div class="footer-search__wrap">
+                                <fieldset class="fg">
+                                    <input type="text" placeholder="Почта">
+                                </fieldset>
+                                <button class="footer-search__btn m-btn m-btn-medium m-btn-primary">
+                                    <span>Подписаться</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer__middle">
+                        <div class="footer-nav">
+                            <div class="text20 medium-text">
+                                Дополнительно
+                            </div>
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link text16">Контакты</a>
+                                <a href="" class="footer-nav__link text16">Оплата</a>
+                                <a href="" class="footer-nav__link text16">Доставка</a>
+                                <a href="" class="footer-nav__link text16">Портфолио</a>
+                                <a href="" class="footer-nav__link text16">Генератор QR</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="text20 medium-text">
+                                Информация
+                            </div>
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link text16">Публичная оферта</a>
+                                <a href="" class="footer-nav__link text16">Требования к макетам</a>
+                                <a href="" class="footer-nav__link text16">Портал поставщиков</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="text20 medium-text">
+                                О компании
+                            </div>
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link text16">О нас</a>
+                                <a href="" class="footer-nav__link text16">Наша команда</a>
+                                <a href="" class="footer-nav__link text16">Вакансии</a>
+                                <a href="" class="footer-nav__link text16">Проекты</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav">
+                            <div class="text20 medium-text">
+                                Обратная связь
+                            </div>
+                            <div class="footer-nav__links">
+                                <a href="" class="footer-nav__link text16">Экскурсия по типографии</a>
+                                <a href="" class="footer-nav__link text16">Письмо директору</a>
+                                <a href="" class="footer-nav__link text16">Арендодателям</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <a href="" class="footer__logo">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                    <a href="" class="footer__by">
+                        <svg width="33" height="15" viewBox="0 0 33 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.5595 11.9212C27.4027 9.13632 26.2671 6.39273 25.1244 3.64914C24.9825 3.72478 24.9754 3.8623 24.9328 3.96545C23.563 7.23851 22.2003 10.5184 20.8448 13.7915C20.7454 14.0322 20.6247 14.1147 20.3621 14.1078C17.0974 14.1009 13.8398 14.1009 10.575 14.1078C10.2556 14.1078 10.2272 14.0322 10.3479 13.7708C10.5821 13.262 10.8021 12.7395 10.9937 12.2168C11.0789 11.983 11.1995 11.9143 11.455 11.9143C13.9036 11.9212 16.3522 11.9143 18.7937 11.928C19.0775 11.928 19.2195 11.8593 19.333 11.5842C20.8022 8.01551 22.2926 4.46053 23.7617 0.898674C23.854 0.678636 23.9534 0.58237 24.216 0.589246C24.805 0.609875 25.4012 0.602999 25.9903 0.589246C26.189 0.58237 26.3026 0.630503 26.3877 0.829912C28.1833 5.16878 29.9861 9.50079 31.7959 13.8396C31.881 14.039 31.8739 14.1147 31.6114 14.1147C28.8363 14.1078 26.0542 14.1078 23.2791 14.1147C23.0236 14.1147 22.9668 14.0597 23.0733 13.8259C23.3146 13.2827 23.5417 12.7257 23.7617 12.1687C23.8398 11.9762 23.9462 11.9212 24.1521 11.9212C25.4793 11.928 26.7994 11.928 28.1266 11.928C28.2472 11.9212 28.375 11.9212 28.5595 11.9212Z" fill="#4B4B4A" />
+                            <path d="M0 0.596223C0.745214 0.596223 1.46204 0.6031 2.18597 0.589347C2.42017 0.582471 2.44856 0.726871 2.51244 0.878146C3.50606 3.27105 4.49968 5.67083 5.50039 8.06372C5.87656 8.9645 6.25269 9.86529 6.62888 10.7661C6.66435 10.8555 6.67852 10.9655 6.80627 11.0549C6.96243 10.6767 7.11859 10.3191 7.26763 9.95471C8.52384 6.93608 9.78005 3.91742 11.0292 0.891899C11.1214 0.658109 11.2421 0.596223 11.4905 0.596223C14.7552 0.6031 18.0129 0.6031 21.2777 0.596223C21.5545 0.596223 21.668 0.623728 21.526 0.92628C21.2848 1.44887 21.0647 1.97833 20.866 2.51467C20.7808 2.73471 20.6673 2.80348 20.426 2.7966C17.9774 2.78972 15.5289 2.7966 13.0874 2.78284C12.7822 2.78284 12.6402 2.85848 12.5196 3.1404C11.0575 6.68851 9.58131 10.2229 8.1193 13.7709C8.01284 14.0392 7.87797 14.1354 7.57989 14.1216C6.99084 14.101 6.39467 14.1079 5.80558 14.1148C5.64234 14.1148 5.55008 14.0666 5.4862 13.9154C3.66929 9.52147 1.84529 5.13449 0.0283891 0.747499C0.0141945 0.713118 0.0141945 0.678737 0 0.596223Z" fill="#4B4B4A" />
+                            <path d="M12.5835 8.41446C12.8674 7.73371 13.1513 7.06673 13.421 6.39975C13.4777 6.25537 13.5842 6.26225 13.7049 6.26225C15.4792 6.26225 17.2535 6.26225 19.0279 6.25537C19.2691 6.25537 19.2763 6.33097 19.1911 6.51665C18.9427 7.08738 18.7085 7.65811 18.4813 8.23567C18.4246 8.3801 18.3536 8.44888 18.1761 8.44888C16.3664 8.442 14.5566 8.442 12.7468 8.442C12.7042 8.43511 12.6545 8.42823 12.5835 8.41446Z" fill="#4B4B4A" />
+                        </svg>
+                        <span class="text12 bold-text">Разработка сайтов</span>
+                    </a>
+                    <div class="site-config" data-modal="configModal">
+                        <button class="site-config__btn m-btn m-btn-small">
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.5633 2.13685C10.6169 2.1905 10.653 2.25915 10.6668 2.33373C10.6806 2.40832 10.6714 2.48533 10.6405 2.5546L6.39778 12.1006C6.36813 12.1674 6.31963 12.224 6.25824 12.2636C6.19684 12.3032 6.12523 12.324 6.05218 12.3234C5.97913 12.3229 5.90784 12.301 5.84706 12.2605C5.78627 12.2199 5.73865 12.1626 5.71003 12.0954L4.17928 8.52085L0.604025 6.98935C0.537069 6.96055 0.479957 6.91286 0.439674 6.85212C0.39939 6.79138 0.377683 6.72021 0.377205 6.64732C0.376728 6.57444 0.397502 6.50299 0.436985 6.44173C0.476469 6.38046 0.532952 6.33203 0.599525 6.30235L10.1455 2.0596C10.2147 2.02889 10.2916 2.01983 10.366 2.03362C10.4404 2.04741 10.5089 2.08339 10.5625 2.13685H10.5633ZM1.68928 6.63835L4.61203 7.89085C4.70041 7.92895 4.77077 7.99957 4.80853 8.0881L6.06103 11.0109L9.55903 3.14035L1.68928 6.63835Z" fill="#495057" />
+                            </svg>
+                            <span>Москва</span>
+                        </button>
+                        <button class="site-config__btn m-btn m-btn-small">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.501709 6.5C0.501709 4.9087 1.13385 3.38258 2.25907 2.25736C3.38429 1.13214 4.91041 0.5 6.50171 0.5C8.09301 0.5 9.61913 1.13214 10.7444 2.25736C11.8696 3.38258 12.5017 4.9087 12.5017 6.5C12.5017 8.0913 11.8696 9.61742 10.7444 10.7426C9.61913 11.8679 8.09301 12.5 6.50171 12.5C4.91041 12.5 3.38429 11.8679 2.25907 10.7426C1.13385 9.61742 0.501709 8.0913 0.501709 6.5ZM6.12671 1.30775C5.62421 1.46075 5.12546 1.92275 4.71146 2.699C4.60421 2.9 4.50446 3.119 4.41521 3.353C4.94396 3.47075 5.51921 3.54575 6.12671 3.56825V1.30775ZM3.68846 3.15425C3.79496 2.86625 3.91646 2.59625 4.04921 2.34575C4.17889 2.10054 4.32865 1.86649 4.49696 1.646C3.85846 1.9106 3.2784 2.2985 2.78996 2.7875C3.06146 2.9255 3.36221 3.04925 3.68846 3.155V3.15425ZM3.13346 6.125C3.16046 5.3225 3.27446 4.55975 3.46046 3.869C3.05448 3.73917 2.66153 3.57169 2.28671 3.36875C1.68937 4.17076 1.33482 5.1274 1.26521 6.125H3.13271H3.13346ZM4.18346 4.06925C4.00665 4.74107 3.90601 5.43066 3.88346 6.125H6.12671V4.31825C5.44421 4.29575 4.78946 4.2095 4.18346 4.06925ZM6.87671 4.3175V6.125H9.11921C9.09691 5.43069 8.99653 4.7411 8.81996 4.06925C8.21396 4.2095 7.55921 4.295 6.87671 4.31825V4.3175ZM3.88421 6.875C3.91046 7.61525 4.01621 8.3105 4.18346 8.93075C4.82175 8.7859 5.4725 8.70277 6.12671 8.6825V6.875H3.88421ZM6.87671 6.875V8.68175C7.55921 8.70425 8.21396 8.7905 8.81996 8.93075C8.98721 8.3105 9.09296 7.61525 9.11996 6.875H6.87671ZM4.41521 9.647C4.50521 9.881 4.60421 10.1 4.71146 10.301C5.12546 11.0772 5.62496 11.5385 6.12671 11.6923V9.4325C5.51921 9.455 4.94396 9.53 4.41521 9.64775V9.647ZM4.49771 11.354C4.32913 11.1335 4.17912 10.8995 4.04921 10.6542C3.91108 10.3928 3.79056 10.1225 3.68846 9.845C3.37993 9.94415 3.07954 10.067 2.78996 10.2125C3.2784 10.7015 3.85846 11.0894 4.49696 11.354H4.49771ZM3.46046 9.131C3.26574 8.39392 3.15578 7.63702 3.13271 6.875H1.26521C1.33478 7.8726 1.68933 8.82926 2.28671 9.63125C2.63921 9.43775 3.03296 9.26975 3.46046 9.131ZM8.50646 11.354C9.14464 11.0896 9.72444 10.7019 10.2127 10.2133C9.92338 10.0678 9.62323 9.94493 9.31496 9.84575C9.21283 10.123 9.09231 10.3931 8.95421 10.6542C8.82456 10.8995 8.6748 11.1335 8.50646 11.354ZM6.87671 9.43175V11.6923C7.37921 11.5393 7.87796 11.0772 8.29196 10.301C8.39921 10.1 8.49896 9.881 8.58821 9.647C8.02542 9.5236 7.45255 9.4518 6.87671 9.4325V9.43175ZM9.54296 9.131C9.97046 9.26975 10.3642 9.43775 10.7167 9.63125C11.3141 8.82926 11.6686 7.8726 11.7382 6.875H9.87071C9.84764 7.63702 9.73768 8.39392 9.54296 9.131ZM11.7382 6.125C11.6686 5.1274 11.3141 4.17074 10.7167 3.36875C10.3642 3.56225 9.97046 3.73025 9.54296 3.869C9.72896 4.559 9.84296 5.3225 9.87071 6.125H11.7382ZM8.95421 2.34575C9.08696 2.59625 9.20846 2.86625 9.31571 3.15425C9.62374 3.05506 9.92363 2.93219 10.2127 2.78675C9.72436 2.29837 9.14457 1.91099 8.50646 1.64675C8.66996 1.859 8.81996 2.0945 8.95421 2.34575ZM8.58821 3.353C8.503 3.12911 8.40407 2.9107 8.29196 2.699C7.87796 1.92275 7.37921 1.4615 6.87671 1.30775V3.5675C7.48421 3.545 8.05946 3.47 8.58821 3.35225V3.353Z" fill="#495057" />
+                            </svg>
+                            <span>Ru</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <div class="modal config-modal" id="configModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 medium-text">
+                    Настройки сайта
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.29266 8.29259C8.48019 8.10512 8.7345 7.99981 8.99966 7.99981C9.26483 7.99981 9.51914 8.10512 9.70666 8.29259L15.9997 14.5856L22.2927 8.29259C22.3849 8.19708 22.4953 8.1209 22.6173 8.06849C22.7393 8.01608 22.8705 7.9885 23.0033 7.98734C23.136 7.98619 23.2677 8.01149 23.3906 8.06177C23.5135 8.11205 23.6252 8.18631 23.7191 8.2802C23.813 8.37409 23.8872 8.48574 23.9375 8.60864C23.9878 8.73154 24.0131 8.86321 24.0119 8.99599C24.0108 9.12877 23.9832 9.25999 23.9308 9.382C23.8784 9.504 23.8022 9.61435 23.7067 9.70659L17.4137 15.9996L23.7067 22.2926C23.8888 22.4812 23.9896 22.7338 23.9873 22.996C23.9851 23.2582 23.8799 23.509 23.6945 23.6944C23.5091 23.8798 23.2583 23.985 22.9961 23.9873C22.7339 23.9895 22.4813 23.8888 22.2927 23.7066L15.9997 17.4136L9.70666 23.7066C9.51806 23.8888 9.26546 23.9895 9.00326 23.9873C8.74107 23.985 8.49025 23.8798 8.30485 23.6944C8.11944 23.509 8.01427 23.2582 8.01199 22.996C8.00971 22.7338 8.11051 22.4812 8.29266 22.2926L14.5857 15.9996L8.29266 9.70659C8.10519 9.51907 7.99988 9.26476 7.99988 8.99959C7.99988 8.73443 8.10519 8.48012 8.29266 8.29259V8.29259Z" fill="black" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__content">
+                <div class="config-modal__groups">
+                    <div class="config-group">
+                        <div class="text16 medium-text">
+                            Язык
+                        </div>
+                        <div class="config-group__radios">
+                            <div class="m-radio">
+                                <input checked type="radio" name="lang">
+                                <label>Русский</label>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="lang">
+                                <label>O'zbek tili</label>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="lang">
+                                <label>English</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="config-group">
+                        <div class="text16 medium-text">
+                            Город
+                        </div>
+                        <div class="config-group__radios">
+                            <div class="m-radio">
+                                <input checked type="radio" name="city">
+                                <label>Москва</label>
+                            </div>
+                            <div class="m-radio">
+                                <input type="radio" name="city">
+                                <label>Ташкентi</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
