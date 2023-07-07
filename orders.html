@@ -1226,26 +1226,481 @@
                                     </a>
                                 </div>
 
-                                <div class="orders-filter">
-                                    <div class="orders-filter__checks">
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label>Доставка 0 ₽</label>
+
+
+                                <div class="order-card">
+                                    <div class="order-card__top">
+                                        <div class="order-card__phone text16 lh150">
+                                            917074–12–22
                                         </div>
-                                        <div class="m-check">
-                                            <input type="checkbox">
-                                            <label>Самовывоз</label>
+                                        <div class="order-card__name text16 lh150">
+                                            <img src="img/headphones.svg" alt="">
+                                            <span>Герасимова Майя</span>
+                                        </div>
+                                        <div class="order-card__price text16 lh150">
+                                            3 540 ₽
+                                        </div>
+                                        <div class="order-card__badges">
+                                            <div class="badge _warning">
+                                                <span class="text12 bold-text">Ожидает оплаты</span>
+                                            </div>
+                                            <div class="badge _warning">
+                                                <span class="text12 bold-text">В работе</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="select1">
-                                        <img src="img/sort.svg" alt="">
-                                        <select class="m-select">
-                                            <option selected>Сначала недавние</option>
-                                            <option>Сначала недавние 2</option>
-                                            <option>Сначала недавние 3</option>
-                                        </select>
+                                    <div class="order-card__props">
+                                        <div class="props-item">
+                                            <span class="props-item__title text16 lh150">Самовывоз</span>
+                                            <span class="props-item__desc text16 lh150">Копицентр Тульская</span>
+                                        </div>
+                                        <div class="props-item">
+                                            <span class="props-item__title text16 lh150">Способ оплаты</span>
+                                            <span class="props-item__desc text16 lh150">Картой на сайте</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-card__bottom">
+                                        <div class="order-card__nav">
+                                            <button class="order-card__pay-btn m-btn m-btn-small m-btn-primary">
+                                                <span>Оплатить</span>
+                                            </button>
+                                            <button class="m-btn m-btn-small m-btn-secondary-outline">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.14309 5.31713C5.06009 4.20613 6.44809 3.49913 8.00009 3.49913C9.15264 3.49928 10.2698 3.89743 11.1626 4.62628C12.0555 5.35513 12.6692 6.36994 12.9001 7.49913H11.5341C11.4866 7.49915 11.4401 7.5127 11.4 7.5382C11.3599 7.5637 11.3279 7.60009 11.3078 7.64311C11.2876 7.68613 11.2802 7.734 11.2862 7.78111C11.2923 7.82823 11.3117 7.87263 11.3421 7.90913L13.3081 10.2691C13.3315 10.2973 13.3609 10.3199 13.3941 10.3354C13.4273 10.351 13.4635 10.359 13.5001 10.359C13.5367 10.359 13.5729 10.351 13.6061 10.3354C13.6393 10.3199 13.6686 10.2973 13.6921 10.2691L15.6581 7.90913C15.6885 7.87263 15.7079 7.82823 15.7139 7.78111C15.72 7.734 15.7125 7.68613 15.6924 7.64311C15.6723 7.60009 15.6403 7.5637 15.6002 7.5382C15.5601 7.5127 15.5136 7.49915 15.4661 7.49913H13.9171C13.7247 6.36559 13.2108 5.31114 12.4365 4.46122C11.6622 3.6113 10.66 3.00166 9.54926 2.70482C8.43849 2.40798 7.26582 2.43643 6.17075 2.78679C5.07568 3.13715 4.10428 3.79466 3.37209 4.68113C3.32777 4.73143 3.29401 4.79012 3.27283 4.85371C3.25165 4.91731 3.24347 4.98452 3.24879 5.05134C3.2541 5.11817 3.2728 5.18324 3.30376 5.24269C3.33473 5.30214 3.37733 5.35476 3.42904 5.39741C3.48075 5.44007 3.54051 5.47189 3.60477 5.49099C3.66902 5.51009 3.73646 5.51607 3.80308 5.50858C3.86969 5.50109 3.93412 5.48028 3.99253 5.44739C4.05094 5.41451 4.10214 5.37021 4.14309 5.31713ZM4.38956 11.9573C3.73644 11.276 3.2894 10.4238 3.10009 9.49913H4.46609C4.51359 9.49912 4.56011 9.48556 4.60019 9.46007C4.64027 9.43457 4.67225 9.39818 4.6924 9.35516C4.71254 9.31214 4.72001 9.26427 4.71394 9.21715C4.70786 9.17004 4.68849 9.12564 4.65809 9.08913L2.69209 6.72913C2.66862 6.701 2.63926 6.67836 2.60609 6.66283C2.57291 6.6473 2.53672 6.63925 2.50009 6.63925C2.46345 6.63925 2.42726 6.6473 2.39409 6.66283C2.36091 6.67836 2.33155 6.701 2.30809 6.72913L0.342086 9.08913C0.311684 9.12564 0.29231 9.17004 0.286234 9.21715C0.280157 9.26427 0.287629 9.31214 0.307775 9.35516C0.327921 9.39818 0.359907 9.43457 0.399987 9.46007C0.440067 9.48556 0.486583 9.49912 0.534086 9.49913H2.08309C2.27545 10.6327 2.78936 11.6871 3.56367 12.537C4.33799 13.387 5.34013 13.9966 6.45091 14.2934C7.56169 14.5903 8.73435 14.5618 9.82942 14.2115C10.9245 13.8611 11.8959 13.2036 12.6281 12.3171C12.6724 12.2668 12.7062 12.2082 12.7273 12.1446C12.7485 12.081 12.7567 12.0137 12.7514 11.9469C12.7461 11.8801 12.7274 11.815 12.6964 11.7556C12.6654 11.6961 12.6228 11.6435 12.5711 11.6009C12.5194 11.5582 12.4597 11.5264 12.3954 11.5073C12.3311 11.4882 12.2637 11.4822 12.1971 11.4897C12.1305 11.4972 12.0661 11.518 12.0076 11.5509C11.9492 11.5838 11.898 11.6281 11.8571 11.6811C11.2561 12.4088 10.4614 12.9516 9.56498 13.2468C8.66853 13.5421 7.70685 13.5776 6.79105 13.3494C5.87525 13.1212 5.04269 12.6386 4.38956 11.9573Z" fill="#4F03EF" />
+                                                </svg>
+                                                <span>Повторить заказ</span>
+                                            </button>
+                                            <button class="m-btn m-btn-small m-btn-danger-outline">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.64592 5.14518C4.69236 5.09862 4.74754 5.06168 4.80828 5.03647C4.86903 5.01127 4.93415 4.99829 4.99992 4.99829C5.06568 4.99829 5.13081 5.01127 5.19155 5.03647C5.2523 5.06168 5.30747 5.09862 5.35392 5.14518L7.99992 7.79218L10.6459 5.14518C10.6924 5.0987 10.7476 5.06182 10.8083 5.03666C10.8691 5.0115 10.9342 4.99855 10.9999 4.99855C11.0657 4.99855 11.1308 5.0115 11.1915 5.03666C11.2522 5.06182 11.3074 5.0987 11.3539 5.14518C11.4004 5.19167 11.4373 5.24686 11.4624 5.3076C11.4876 5.36834 11.5005 5.43344 11.5005 5.49918C11.5005 5.56493 11.4876 5.63003 11.4624 5.69077C11.4373 5.75151 11.4004 5.8067 11.3539 5.85318L8.70692 8.49918L11.3539 11.1452C11.4004 11.1917 11.4373 11.2469 11.4624 11.3076C11.4876 11.3683 11.5005 11.4334 11.5005 11.4992C11.5005 11.5649 11.4876 11.63 11.4624 11.6908C11.4373 11.7515 11.4004 11.8067 11.3539 11.8532C11.3074 11.8997 11.2522 11.9365 11.1915 11.9617C11.1308 11.9869 11.0657 11.9998 10.9999 11.9998C10.9342 11.9998 10.8691 11.9869 10.8083 11.9617C10.7476 11.9365 10.6924 11.8997 10.6459 11.8532L7.99992 9.20618L5.35392 11.8532C5.30743 11.8997 5.25224 11.9365 5.1915 11.9617C5.13076 11.9869 5.06566 11.9998 4.99992 11.9998C4.93417 11.9998 4.86907 11.9869 4.80833 11.9617C4.74759 11.9365 4.6924 11.8997 4.64592 11.8532C4.59943 11.8067 4.56255 11.7515 4.53739 11.6908C4.51223 11.63 4.49929 11.5649 4.49929 11.4992C4.49929 11.4334 4.51223 11.3683 4.53739 11.3076C4.56255 11.2469 4.59943 11.1917 4.64592 11.1452L7.29292 8.49918L4.64592 5.85318C4.59935 5.80674 4.56241 5.75156 4.5372 5.69082C4.512 5.63007 4.49902 5.56495 4.49902 5.49918C4.49902 5.43342 4.512 5.3683 4.5372 5.30755C4.56241 5.24681 4.59935 5.19163 4.64592 5.14518Z" fill="#FF4B4B" />
+                                                </svg>
+                                                <span>Отменить заказ</span>
+                                            </button>
+                                        </div>
+                                        <button class="order-card__toggle m-btn m-btn-small m-btn-text">
+                                            <span>Подробнее</span>
+                                        </button>
+                                    </div>
+                                    <div class="order-card__hidden">
+                                        <div class="order-detail">
+                                            <div class="text16 medium-text">
+                                                Состав заказа:
+                                            </div>
+                                            <div class="order-detail__docs">
+                                                <a href="" class="doc-item m-btn m-btn-small m-btn-text">
+                                                    <img src="img/pdf.svg" alt="">
+                                                    <span>Чек/Счёт</span>
+                                                </a>
+                                                <a href="" class="doc-item m-btn m-btn-small m-btn-text">
+                                                    <img src="img/pdf.svg" alt="">
+                                                    <span>Акт СПОу</span>
+                                                </a>
+                                                <a href="" class="doc-item m-btn m-btn-small m-btn-text">
+                                                    <img src="img/pdf.svg" alt="">
+                                                    <span>УПД</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-detail__products grid-column4">
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="order-detail__wrap grid-column2">
+                                                <div class="order-detail__col">
+                                                    <div class="text16 lh150">
+                                                        Файлы
+                                                    </div>
+                                                    <div class="order-detail__images">
+                                                        <div class="file-item">
+                                                            <img src="img/file.svg" alt="">
+                                                            <span>image1.png</span>
+                                                        </div>
+                                                        <div class="file-item">
+                                                            <img src="img/file.svg" alt="">
+                                                            <span>image2.png</span>
+                                                        </div>
+                                                        <div class="file-item">
+                                                            <img src="img/file.svg" alt="">
+                                                            <span>image3.png</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-detail__col">
+                                                    <fieldset class="fg">
+                                                        <label>Комментарий</label>
+                                                        <textarea disabled placeholder="Autosize height based on content lines"></textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="text16 medium-text">
+                                                Представитель
+                                            </div>
+                                            <div class="order-detail__agent">
+                                                <fieldset class="fg">
+                                                    <div class="fg__icon">
+                                                        <img src="img/user.svg" alt="">
+                                                    </div>
+                                                    <input disabled type="text" value="Панфилов С.И.">
+                                                </fieldset>
+                                                <fieldset class="fg">
+                                                    <div class="fg__icon">
+                                                        <img src="img/phone.svg" alt="">
+                                                    </div>
+                                                    <input disabled type="tel" value="+7 (942) 043–32–14">
+                                                </fieldset>
+                                                <fieldset class="fg">
+                                                    <div class="fg__icon">
+                                                        <img src="img/mail.svg" alt="">
+                                                    </div>
+                                                    <input disabled type="email" value="panfeeloffis@mail.com">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
+
+                                <div class="order-card">
+                                    <div class="order-card__top">
+                                        <div class="order-card__phone text16 lh150">
+                                            917074–12–22
+                                        </div>
+                                        <div class="order-card__name text16 lh150">
+                                            <img src="img/headphones.svg" alt="">
+                                            <span>Герасимова Майя</span>
+                                        </div>
+                                        <div class="order-card__price text16 lh150">
+                                            3 540 ₽
+                                        </div>
+                                        <div class="order-card__badges">
+                                            <div class="badge _warning">
+                                                <span class="text12 bold-text">Ожидает оплаты</span>
+                                            </div>
+                                            <div class="badge _success">
+                                                <span class="text12 bold-text">Готов к выдаче</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-card__props">
+                                        <div class="props-item">
+                                            <span class="props-item__title text16 lh150">Самовывоз</span>
+                                            <span class="props-item__desc text16 lh150">Копицентр Тульская</span>
+                                        </div>
+                                        <div class="props-item">
+                                            <span class="props-item__title text16 lh150">Способ оплаты</span>
+                                            <span class="props-item__desc text16 lh150">Картой на сайте</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="order-card__bottom">
+                                        <div class="order-card__nav">
+                                            <button class="order-card__pay-btn m-btn m-btn-small m-btn-primary">
+                                                <span>Оплатить</span>
+                                            </button>
+                                            <button class="m-btn m-btn-small m-btn-secondary-outline">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.14309 5.31713C5.06009 4.20613 6.44809 3.49913 8.00009 3.49913C9.15264 3.49928 10.2698 3.89743 11.1626 4.62628C12.0555 5.35513 12.6692 6.36994 12.9001 7.49913H11.5341C11.4866 7.49915 11.4401 7.5127 11.4 7.5382C11.3599 7.5637 11.3279 7.60009 11.3078 7.64311C11.2876 7.68613 11.2802 7.734 11.2862 7.78111C11.2923 7.82823 11.3117 7.87263 11.3421 7.90913L13.3081 10.2691C13.3315 10.2973 13.3609 10.3199 13.3941 10.3354C13.4273 10.351 13.4635 10.359 13.5001 10.359C13.5367 10.359 13.5729 10.351 13.6061 10.3354C13.6393 10.3199 13.6686 10.2973 13.6921 10.2691L15.6581 7.90913C15.6885 7.87263 15.7079 7.82823 15.7139 7.78111C15.72 7.734 15.7125 7.68613 15.6924 7.64311C15.6723 7.60009 15.6403 7.5637 15.6002 7.5382C15.5601 7.5127 15.5136 7.49915 15.4661 7.49913H13.9171C13.7247 6.36559 13.2108 5.31114 12.4365 4.46122C11.6622 3.6113 10.66 3.00166 9.54926 2.70482C8.43849 2.40798 7.26582 2.43643 6.17075 2.78679C5.07568 3.13715 4.10428 3.79466 3.37209 4.68113C3.32777 4.73143 3.29401 4.79012 3.27283 4.85371C3.25165 4.91731 3.24347 4.98452 3.24879 5.05134C3.2541 5.11817 3.2728 5.18324 3.30376 5.24269C3.33473 5.30214 3.37733 5.35476 3.42904 5.39741C3.48075 5.44007 3.54051 5.47189 3.60477 5.49099C3.66902 5.51009 3.73646 5.51607 3.80308 5.50858C3.86969 5.50109 3.93412 5.48028 3.99253 5.44739C4.05094 5.41451 4.10214 5.37021 4.14309 5.31713ZM4.38956 11.9573C3.73644 11.276 3.2894 10.4238 3.10009 9.49913H4.46609C4.51359 9.49912 4.56011 9.48556 4.60019 9.46007C4.64027 9.43457 4.67225 9.39818 4.6924 9.35516C4.71254 9.31214 4.72001 9.26427 4.71394 9.21715C4.70786 9.17004 4.68849 9.12564 4.65809 9.08913L2.69209 6.72913C2.66862 6.701 2.63926 6.67836 2.60609 6.66283C2.57291 6.6473 2.53672 6.63925 2.50009 6.63925C2.46345 6.63925 2.42726 6.6473 2.39409 6.66283C2.36091 6.67836 2.33155 6.701 2.30809 6.72913L0.342086 9.08913C0.311684 9.12564 0.29231 9.17004 0.286234 9.21715C0.280157 9.26427 0.287629 9.31214 0.307775 9.35516C0.327921 9.39818 0.359907 9.43457 0.399987 9.46007C0.440067 9.48556 0.486583 9.49912 0.534086 9.49913H2.08309C2.27545 10.6327 2.78936 11.6871 3.56367 12.537C4.33799 13.387 5.34013 13.9966 6.45091 14.2934C7.56169 14.5903 8.73435 14.5618 9.82942 14.2115C10.9245 13.8611 11.8959 13.2036 12.6281 12.3171C12.6724 12.2668 12.7062 12.2082 12.7273 12.1446C12.7485 12.081 12.7567 12.0137 12.7514 11.9469C12.7461 11.8801 12.7274 11.815 12.6964 11.7556C12.6654 11.6961 12.6228 11.6435 12.5711 11.6009C12.5194 11.5582 12.4597 11.5264 12.3954 11.5073C12.3311 11.4882 12.2637 11.4822 12.1971 11.4897C12.1305 11.4972 12.0661 11.518 12.0076 11.5509C11.9492 11.5838 11.898 11.6281 11.8571 11.6811C11.2561 12.4088 10.4614 12.9516 9.56498 13.2468C8.66853 13.5421 7.70685 13.5776 6.79105 13.3494C5.87525 13.1212 5.04269 12.6386 4.38956 11.9573Z" fill="#4F03EF" />
+                                                </svg>
+                                                <span>Повторить заказ</span>
+                                            </button>
+                                        </div>
+                                        <button class="order-card__toggle m-btn m-btn-small m-btn-text">
+                                            <span>Подробнее</span>
+                                        </button>
+                                    </div>
+                                    <div class="order-card__hidden">
+                                        <div class="order-detail">
+                                            <div class="text16 medium-text">
+                                                Состав заказа:
+                                            </div>
+                                            <div class="order-detail__docs">
+                                                <a href="" class="doc-item m-btn m-btn-small m-btn-text">
+                                                    <img src="img/pdf.svg" alt="">
+                                                    <span>Чек/Счёт</span>
+                                                </a>
+                                                <a href="" class="doc-item m-btn m-btn-small m-btn-text">
+                                                    <img src="img/pdf.svg" alt="">
+                                                    <span>Акт СПОу</span>
+                                                </a>
+                                                <a href="" class="doc-item m-btn m-btn-small m-btn-text">
+                                                    <img src="img/pdf.svg" alt="">
+                                                    <span>УПД</span>
+                                                </a>
+                                            </div>
+                                            <div class="order-detail__products grid-column4">
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="product-card4">
+                                                    <div class="product-card4__text">
+                                                        <div class="text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-card2__prices">
+                                                        <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                            от 480 ₽
+                                                        </div>
+                                                        <div class="product-card2__price2 text20 medium-text">
+                                                            от 440 ₽
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="order-detail__wrap grid-column2">
+                                                <div class="order-detail__col">
+                                                    <div class="text16 lh150">
+                                                        Файлы
+                                                    </div>
+                                                    <div class="order-detail__images">
+                                                        <div class="file-item">
+                                                            <img src="img/file.svg" alt="">
+                                                            <span>image1.png</span>
+                                                        </div>
+                                                        <div class="file-item">
+                                                            <img src="img/file.svg" alt="">
+                                                            <span>image2.png</span>
+                                                        </div>
+                                                        <div class="file-item">
+                                                            <img src="img/file.svg" alt="">
+                                                            <span>image3.png</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="order-detail__col">
+                                                    <fieldset class="fg">
+                                                        <label>Комментарий</label>
+                                                        <textarea disabled placeholder="Autosize height based on content lines"></textarea>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                            <div class="text16 medium-text">
+                                                Представитель
+                                            </div>
+                                            <div class="order-detail__agent">
+                                                <fieldset class="fg">
+                                                    <div class="fg__icon">
+                                                        <img src="img/user.svg" alt="">
+                                                    </div>
+                                                    <input disabled type="text" value="Панфилов С.И.">
+                                                </fieldset>
+                                                <fieldset class="fg">
+                                                    <div class="fg__icon">
+                                                        <img src="img/phone.svg" alt="">
+                                                    </div>
+                                                    <input disabled type="tel" value="+7 (942) 043–32–14">
+                                                </fieldset>
+                                                <fieldset class="fg">
+                                                    <div class="fg__icon">
+                                                        <img src="img/mail.svg" alt="">
+                                                    </div>
+                                                    <input disabled type="email" value="panfeeloffis@mail.com">
+                                                </fieldset>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="pagination">
+                                    <button class="pagination__btn m-btn m-btn-small m-btn-primary">
+                                        <span>Показать еще</span>
+                                    </button>
+                                    <div class="pagination__wrap _view1">
+                                        <div class="pagination__nav">
+                                            <a href="" class="pagination__item">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.01519 1.73371C9.05012 1.76854 9.07782 1.80992 9.09673 1.85548C9.11563 1.90104 9.12536 1.94988 9.12536 1.99921C9.12536 2.04853 9.11563 2.09737 9.09673 2.14293C9.07782 2.18849 9.05012 2.22987 9.01519 2.26471L4.77994 6.49921L9.01519 10.7337C9.08561 10.8041 9.12517 10.8996 9.12517 10.9992C9.12517 11.0988 9.08561 11.1943 9.01519 11.2647C8.94478 11.3351 8.84928 11.3747 8.74969 11.3747C8.65011 11.3747 8.55461 11.3351 8.48419 11.2647L3.98419 6.76471C3.94927 6.72987 3.92156 6.68849 3.90266 6.64293C3.88375 6.59737 3.87402 6.54853 3.87402 6.49921C3.87402 6.44988 3.88375 6.40104 3.90266 6.35548C3.92156 6.30992 3.94927 6.26854 3.98419 6.23371L8.48419 1.73371C8.51903 1.69878 8.56041 1.67108 8.60597 1.65217C8.65153 1.63327 8.70037 1.62354 8.74969 1.62354C8.79902 1.62354 8.84786 1.63327 8.89342 1.65217C8.93898 1.67108 8.98036 1.69878 9.01519 1.73371Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">1</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3 9.99915C2.60218 9.99915 2.22064 9.84111 1.93934 9.55981C1.65804 9.2785 1.5 8.89697 1.5 8.49915C1.5 8.10132 1.65804 7.71979 1.93934 7.43849C2.22064 7.15718 2.60218 6.99915 3 6.99915C3.39782 6.99915 3.77936 7.15718 4.06066 7.43849C4.34196 7.71979 4.5 8.10132 4.5 8.49915C4.5 8.89697 4.34196 9.2785 4.06066 9.55981C3.77936 9.84111 3.39782 9.99915 3 9.99915ZM8 9.99915C7.60218 9.99915 7.22064 9.84111 6.93934 9.55981C6.65804 9.2785 6.5 8.89697 6.5 8.49915C6.5 8.10132 6.65804 7.71979 6.93934 7.43849C7.22064 7.15718 7.60218 6.99915 8 6.99915C8.39782 6.99915 8.77936 7.15718 9.06066 7.43849C9.34196 7.71979 9.5 8.10132 9.5 8.49915C9.5 8.89697 9.34196 9.2785 9.06066 9.55981C8.77936 9.84111 8.39782 9.99915 8 9.99915ZM13 9.99915C12.6022 9.99915 12.2206 9.84111 11.9393 9.55981C11.658 9.2785 11.5 8.89697 11.5 8.49915C11.5 8.10132 11.658 7.71979 11.9393 7.43849C12.2206 7.15718 12.6022 6.99915 13 6.99915C13.3978 6.99915 13.7794 7.15718 14.0607 7.43849C14.342 7.71979 14.5 8.10132 14.5 8.49915C14.5 8.89697 14.342 9.2785 14.0607 9.55981C13.7794 9.84111 13.3978 9.99915 13 9.99915Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">4</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">5</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">6</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">7</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">8</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3 9.99915C2.60218 9.99915 2.22064 9.84111 1.93934 9.55981C1.65804 9.2785 1.5 8.89697 1.5 8.49915C1.5 8.10132 1.65804 7.71979 1.93934 7.43849C2.22064 7.15718 2.60218 6.99915 3 6.99915C3.39782 6.99915 3.77936 7.15718 4.06066 7.43849C4.34196 7.71979 4.5 8.10132 4.5 8.49915C4.5 8.89697 4.34196 9.2785 4.06066 9.55981C3.77936 9.84111 3.39782 9.99915 3 9.99915ZM8 9.99915C7.60218 9.99915 7.22064 9.84111 6.93934 9.55981C6.65804 9.2785 6.5 8.89697 6.5 8.49915C6.5 8.10132 6.65804 7.71979 6.93934 7.43849C7.22064 7.15718 7.60218 6.99915 8 6.99915C8.39782 6.99915 8.77936 7.15718 9.06066 7.43849C9.34196 7.71979 9.5 8.10132 9.5 8.49915C9.5 8.89697 9.34196 9.2785 9.06066 9.55981C8.77936 9.84111 8.39782 9.99915 8 9.99915ZM13 9.99915C12.6022 9.99915 12.2206 9.84111 11.9393 9.55981C11.658 9.2785 11.5 8.89697 11.5 8.49915C11.5 8.10132 11.658 7.71979 11.9393 7.43849C12.2206 7.15718 12.6022 6.99915 13 6.99915C13.3978 6.99915 13.7794 7.15718 14.0607 7.43849C14.342 7.71979 14.5 8.10132 14.5 8.49915C14.5 8.89697 14.342 9.2785 14.0607 9.55981C13.7794 9.84111 13.3978 9.99915 13 9.99915Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">20</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.98419 1.73371C4.01903 1.69878 4.06041 1.67108 4.10597 1.65217C4.15153 1.63327 4.20037 1.62354 4.24969 1.62354C4.29902 1.62354 4.34786 1.63327 4.39342 1.65217C4.43898 1.67108 4.48036 1.69878 4.51519 1.73371L9.01519 6.23371C9.05012 6.26854 9.07782 6.30992 9.09673 6.35548C9.11563 6.40104 9.12536 6.44988 9.12536 6.49921C9.12536 6.54853 9.11563 6.59737 9.09673 6.64293C9.07782 6.68849 9.05012 6.72987 9.01519 6.76471L4.51519 11.2647C4.44478 11.3351 4.34928 11.3747 4.24969 11.3747C4.15011 11.3747 4.05461 11.3351 3.98419 11.2647C3.91378 11.1943 3.87422 11.0988 3.87422 10.9992C3.87422 10.8996 3.91378 10.8041 3.98419 10.7337L8.21944 6.49921L3.98419 2.26471C3.94927 2.22987 3.92156 2.18849 3.90266 2.14293C3.88375 2.09737 3.87402 2.04853 3.87402 1.99921C3.87402 1.94988 3.88375 1.90104 3.90266 1.85548C3.92156 1.80992 3.94927 1.76854 3.98419 1.73371Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="pagination__field">
+                                            <span class="text14">Перейти к</span>
+                                            <fieldset class="fg">
+                                                <input type="text">
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                    <div class="pagination__wrap _view2">
+                                        <span class="text14">Всего: 320</span>
+                                        <div class="pagination__nav">
+                                            <a href="" class="pagination__item">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.01519 1.73371C9.05012 1.76854 9.07782 1.80992 9.09673 1.85548C9.11563 1.90104 9.12536 1.94988 9.12536 1.99921C9.12536 2.04853 9.11563 2.09737 9.09673 2.14293C9.07782 2.18849 9.05012 2.22987 9.01519 2.26471L4.77994 6.49921L9.01519 10.7337C9.08561 10.8041 9.12517 10.8996 9.12517 10.9992C9.12517 11.0988 9.08561 11.1943 9.01519 11.2647C8.94478 11.3351 8.84928 11.3747 8.74969 11.3747C8.65011 11.3747 8.55461 11.3351 8.48419 11.2647L3.98419 6.76471C3.94927 6.72987 3.92156 6.68849 3.90266 6.64293C3.88375 6.59737 3.87402 6.54853 3.87402 6.49921C3.87402 6.44988 3.88375 6.40104 3.90266 6.35548C3.92156 6.30992 3.94927 6.26854 3.98419 6.23371L8.48419 1.73371C8.51903 1.69878 8.56041 1.67108 8.60597 1.65217C8.65153 1.63327 8.70037 1.62354 8.74969 1.62354C8.79902 1.62354 8.84786 1.63327 8.89342 1.65217C8.93898 1.67108 8.98036 1.69878 9.01519 1.73371Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">1</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3 9.99915C2.60218 9.99915 2.22064 9.84111 1.93934 9.55981C1.65804 9.2785 1.5 8.89697 1.5 8.49915C1.5 8.10132 1.65804 7.71979 1.93934 7.43849C2.22064 7.15718 2.60218 6.99915 3 6.99915C3.39782 6.99915 3.77936 7.15718 4.06066 7.43849C4.34196 7.71979 4.5 8.10132 4.5 8.49915C4.5 8.89697 4.34196 9.2785 4.06066 9.55981C3.77936 9.84111 3.39782 9.99915 3 9.99915ZM8 9.99915C7.60218 9.99915 7.22064 9.84111 6.93934 9.55981C6.65804 9.2785 6.5 8.89697 6.5 8.49915C6.5 8.10132 6.65804 7.71979 6.93934 7.43849C7.22064 7.15718 7.60218 6.99915 8 6.99915C8.39782 6.99915 8.77936 7.15718 9.06066 7.43849C9.34196 7.71979 9.5 8.10132 9.5 8.49915C9.5 8.89697 9.34196 9.2785 9.06066 9.55981C8.77936 9.84111 8.39782 9.99915 8 9.99915ZM13 9.99915C12.6022 9.99915 12.2206 9.84111 11.9393 9.55981C11.658 9.2785 11.5 8.89697 11.5 8.49915C11.5 8.10132 11.658 7.71979 11.9393 7.43849C12.2206 7.15718 12.6022 6.99915 13 6.99915C13.3978 6.99915 13.7794 7.15718 14.0607 7.43849C14.342 7.71979 14.5 8.10132 14.5 8.49915C14.5 8.89697 14.342 9.2785 14.0607 9.55981C13.7794 9.84111 13.3978 9.99915 13 9.99915Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">6</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M3 9.99915C2.60218 9.99915 2.22064 9.84111 1.93934 9.55981C1.65804 9.2785 1.5 8.89697 1.5 8.49915C1.5 8.10132 1.65804 7.71979 1.93934 7.43849C2.22064 7.15718 2.60218 6.99915 3 6.99915C3.39782 6.99915 3.77936 7.15718 4.06066 7.43849C4.34196 7.71979 4.5 8.10132 4.5 8.49915C4.5 8.89697 4.34196 9.2785 4.06066 9.55981C3.77936 9.84111 3.39782 9.99915 3 9.99915ZM8 9.99915C7.60218 9.99915 7.22064 9.84111 6.93934 9.55981C6.65804 9.2785 6.5 8.89697 6.5 8.49915C6.5 8.10132 6.65804 7.71979 6.93934 7.43849C7.22064 7.15718 7.60218 6.99915 8 6.99915C8.39782 6.99915 8.77936 7.15718 9.06066 7.43849C9.34196 7.71979 9.5 8.10132 9.5 8.49915C9.5 8.89697 9.34196 9.2785 9.06066 9.55981C8.77936 9.84111 8.39782 9.99915 8 9.99915ZM13 9.99915C12.6022 9.99915 12.2206 9.84111 11.9393 9.55981C11.658 9.2785 11.5 8.89697 11.5 8.49915C11.5 8.10132 11.658 7.71979 11.9393 7.43849C12.2206 7.15718 12.6022 6.99915 13 6.99915C13.3978 6.99915 13.7794 7.15718 14.0607 7.43849C14.342 7.71979 14.5 8.10132 14.5 8.49915C14.5 8.89697 14.342 9.2785 14.0607 9.55981C13.7794 9.84111 13.3978 9.99915 13 9.99915Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <span class="text14">20</span>
+                                            </a>
+                                            <a href="" class="pagination__item">
+                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.98419 1.73371C4.01903 1.69878 4.06041 1.67108 4.10597 1.65217C4.15153 1.63327 4.20037 1.62354 4.24969 1.62354C4.29902 1.62354 4.34786 1.63327 4.39342 1.65217C4.43898 1.67108 4.48036 1.69878 4.51519 1.73371L9.01519 6.23371C9.05012 6.26854 9.07782 6.30992 9.09673 6.35548C9.11563 6.40104 9.12536 6.44988 9.12536 6.49921C9.12536 6.54853 9.11563 6.59737 9.09673 6.64293C9.07782 6.68849 9.05012 6.72987 9.01519 6.76471L4.51519 11.2647C4.44478 11.3351 4.34928 11.3747 4.24969 11.3747C4.15011 11.3747 4.05461 11.3351 3.98419 11.2647C3.91378 11.1943 3.87422 11.0988 3.87422 10.9992C3.87422 10.8996 3.91378 10.8041 3.98419 10.7337L8.21944 6.49921L3.98419 2.26471C3.94927 2.22987 3.92156 2.18849 3.90266 2.14293C3.88375 2.09737 3.87402 2.04853 3.87402 1.99921C3.87402 1.94988 3.88375 1.90104 3.90266 1.85548C3.92156 1.80992 3.94927 1.76854 3.98419 1.73371Z" fill="#FDC305" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -1623,7 +2078,7 @@
         </div>
     </div>
 
-    <div class="modal modal--active pickup-modal" id="pickupModal">
+    <div class="modal pickup-modal" id="pickupModal">
         <div class="modal__bg _close-modal"></div>
         <div class="modal__dialog">
             <div class="modal__top">
@@ -1718,6 +2173,60 @@
             <div class="modal__bottom">
                 <button class="m-btn m-btn-medium m-btn-primary">
                     <span>Готово</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal500" id="companyModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__top">
+                <div class="text20 medium-text">
+                    Добавление юридического лица
+                </div>
+                <button class="modal__close _close-modal">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.29266 8.29259C8.48019 8.10512 8.7345 7.99981 8.99966 7.99981C9.26483 7.99981 9.51914 8.10512 9.70666 8.29259L15.9997 14.5856L22.2927 8.29259C22.3849 8.19708 22.4953 8.1209 22.6173 8.06849C22.7393 8.01608 22.8705 7.9885 23.0033 7.98734C23.136 7.98619 23.2677 8.01149 23.3906 8.06177C23.5135 8.11205 23.6252 8.18631 23.7191 8.2802C23.813 8.37409 23.8872 8.48574 23.9375 8.60864C23.9878 8.73154 24.0131 8.86321 24.0119 8.99599C24.0108 9.12877 23.9832 9.25999 23.9308 9.382C23.8784 9.504 23.8022 9.61435 23.7067 9.70659L17.4137 15.9996L23.7067 22.2926C23.8888 22.4812 23.9896 22.7338 23.9873 22.996C23.9851 23.2582 23.8799 23.509 23.6945 23.6944C23.5091 23.8798 23.2583 23.985 22.9961 23.9873C22.7339 23.9895 22.4813 23.8888 22.2927 23.7066L15.9997 17.4136L9.70666 23.7066C9.51806 23.8888 9.26546 23.9895 9.00326 23.9873C8.74107 23.985 8.49025 23.8798 8.30485 23.6944C8.11944 23.509 8.01427 23.2582 8.01199 22.996C8.00971 22.7338 8.11051 22.4812 8.29266 22.2926L14.5857 15.9996L8.29266 9.70659C8.10519 9.51907 7.99988 9.26476 7.99988 8.99959C7.99988 8.73443 8.10519 8.48012 8.29266 8.29259V8.29259Z" fill="black" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal__content">
+                <div class="modal-form">
+                    <fieldset class="fg">
+                        <label>БИК</label>
+                        <input type="text" placeholder="000 100 000">
+                    </fieldset>
+                    <fieldset class="fg _required">
+                        <label>Наименование</label>
+                        <input type="text" placeholder='ООО "Компания А"'>
+                    </fieldset>
+                    <fieldset class="fg _required">
+                        <label>Номер телефона</label>
+                        <input type="tel" placeholder="+7 (999) 000-00-00">
+                    </fieldset>
+                    <fieldset class="fg _required">
+                        <label>Электронная почта</label>
+                        <input type="email" placeholder="example@mail.ru">
+                    </fieldset>
+                    <fieldset class="fg _required">
+                        <label>ИНН</label>
+                        <input type="text" placeholder="00 10 00 00 00 1">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <label>Физический адрес</label>
+                        <input type="text" placeholder="Санкт-Петербург, пр. Невский, д. 10, офис 2">
+                    </fieldset>
+                    <fieldset class="fg">
+                        <label>Расчётный счёт</label>
+                        <input type="text" placeholder="4050 0000 0000 0001">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="modal__bottom">
+                <button class="m-btn m-btn-medium m-btn-primary">
+                    <span>Отправить запрос</span>
                 </button>
             </div>
         </div>
