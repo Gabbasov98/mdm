@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
-    <title>Главная</title>
+    <title>Избранное</title>
 </head>
 
 
@@ -1123,7 +1123,7 @@
             <section class="account">
                 <div class="container">
                     <h1 class="text40 medium-text">
-                        Система лояльности
+                        Избранное
                     </h1>
                     <div class="account__grid grid-column4">
                         <div class="account__sidebar">
@@ -1213,107 +1213,1140 @@
 
                         </div>
                         <div class="account__content">
-                            <div class="loyalty">
-                                <div class="loyalty-card">
-                                    <div class="loyalty-card__top">
-                                        <img src="img/dollar.svg" alt="" class="loyalty-card__icon">
-                                        <div class="text20 medium-text">
-                                            Бонусная карта
+                            <div class="favourite">
+                                <div class="favourite-group">
+                                    <div class="favourite-group__top _active">
+                                        <div class="text24 medium-text">
+                                            Калькуляции
                                         </div>
-                                        <button data-modal="hintModal" class="loyalty-card__hint">
-                                            <img src="img/hint.svg" alt="">
-                                        </button>
-                                    </div>
-                                    <div class="text16 lh150 medium-text gray-text600">
-                                        У вас нет бонусной карты
-                                    </div>
-                                    <div class="modal" id="hintModal">
-                                        <div class="modal__bg _close-modal"></div>
-                                        <div class="modal__dialog">
-                                            <div class="modal__top">
-                                                <div class="text20 medium-text">
-                                                    Подсказка
-                                                </div>
-                                                <button class="modal__close _close-modal">
-                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8.29266 8.29259C8.48019 8.10512 8.7345 7.99981 8.99966 7.99981C9.26483 7.99981 9.51914 8.10512 9.70666 8.29259L15.9997 14.5856L22.2927 8.29259C22.3849 8.19708 22.4953 8.1209 22.6173 8.06849C22.7393 8.01608 22.8705 7.9885 23.0033 7.98734C23.136 7.98619 23.2677 8.01149 23.3906 8.06177C23.5135 8.11205 23.6252 8.18631 23.7191 8.2802C23.813 8.37409 23.8872 8.48574 23.9375 8.60864C23.9878 8.73154 24.0131 8.86321 24.0119 8.99599C24.0108 9.12877 23.9832 9.25999 23.9308 9.382C23.8784 9.504 23.8022 9.61435 23.7067 9.70659L17.4137 15.9996L23.7067 22.2926C23.8888 22.4812 23.9896 22.7338 23.9873 22.996C23.9851 23.2582 23.8799 23.509 23.6945 23.6944C23.5091 23.8798 23.2583 23.985 22.9961 23.9873C22.7339 23.9895 22.4813 23.8888 22.2927 23.7066L15.9997 17.4136L9.70666 23.7066C9.51806 23.8888 9.26546 23.9895 9.00326 23.9873C8.74107 23.985 8.49025 23.8798 8.30485 23.6944C8.11944 23.509 8.01427 23.2582 8.01199 22.996C8.00971 22.7338 8.11051 22.4812 8.29266 22.2926L14.5857 15.9996L8.29266 9.70659C8.10519 9.51907 7.99988 9.26476 7.99988 8.99959C7.99988 8.73443 8.10519 8.48012 8.29266 8.29259V8.29259Z" fill="black" />
-                                                    </svg>
-                                                </button>
+                                        <div class="favourite-group__nav">
+                                            <div class="favourite-group__num">
+                                                <span class="text12 bold-text">8</span>
                                             </div>
-                                            <div class="modal__content">
-                                                <div class="text16 lh150">
-                                                    Бонусная карта позволит вам участвовать в программе лояльности, а именно с каждой покупки вы будете получать кэшбэк в размере 1% и можете оплачивать до 30% своих заказов бонусами.
-                                                    <br>
-                                                    1 бонус = 1 рубль. <br>
-                                                    Бонусы сгорают спустя 365 дней с даты их начисления.
-                                                </div>
-                                            </div>
-                                            <div class="modal__bottom">
-                                                <button class="_close-modal m-btn m-btn-medium m-btn-primary">
-                                                    <span>Понятно</span>
-                                                </button>
-                                            </div>
+                                            <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
                                         </div>
                                     </div>
-                                    <div class="loyalty-card__nav">
-                                        <button class="m-btn m-btn-medium m-btn-primary">
-                                            <span>Выпустить карту</span>
-                                        </button>
+                                    <div class="favourite-group__bottom" style="display: block;">
+                                        <div class="favourite__items">
+                                            <div class="favourite-card">
+                                                <div class="favourite-card__top">
+                                                    <div class="favourite-card__img">
+                                                        <img src="img/favourite.webp" alt="">
+                                                    </div>
+                                                    <div class="favourite-card__content">
+                                                        <div class="favourite-card__info">
+                                                            <div class="favourite-card__title">
+                                                                <div class="text20 medium-text">
+                                                                    Стикеры на плёнке оракал
+                                                                </div>
+                                                            </div>
+                                                            <div class="badge">
+                                                                <span class="text12 bold-text">-20%</span>
+                                                            </div>
+                                                            <div class="favourite-btn _active">
+                                                                <button class="favourite-btn__icon">
+                                                                    <img class="_view1" src="img/heart2.svg" alt="">
+                                                                    <img class="_view2" src="img/heart.svg" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favourite-card__info2">
+
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    48 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    44 ₽/шт.
+                                                                </div>
+                                                            </div>
+                                                            <div class="favourite-field">
+                                                                <div class="loyalty-link__text">
+                                                                    <div class="text16">шт.</div>
+                                                                </div>
+                                                                <fieldset class="fg">
+                                                                    <input type="text" placeholder="3">
+                                                                </fieldset>
+                                                                <button class="loyalty-link__copy">
+                                                                    <img src="img/settings.svg" alt="">
+                                                                </button>
+                                                            </div>
+
+
+                                                            <div class="product-card2__prices _last">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    48 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    44 ₽/шт.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="props">
+                                                    <button class="props__btn m-btn m-btn-medium m-btn-secondary-outline">
+                                                        <span class="_view1">Подробнее</span>
+                                                        <span class="_view2">Скрыть</span>
+                                                    </button>
+                                                    <div class="props__items">
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Услуга</span>
+                                                            <span class="props-item__desc text16 lh150">вставка в лайтбокс</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Печать,  dpi</span>
+                                                            <span class="props-item__desc text16 lh150"> 1 440</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Бэклит, г/м²</span>
+                                                            <span class="props-item__desc text16 lh150">260</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Накатка на монтажную плёнку</span>
+                                                            <span class="props-item__desc text16 lh150">да</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Планшетная резка</span>
+                                                            <span class="props-item__desc text16 lh150">простой контур (круг/овал)</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Выборка</span>
+                                                            <span class="props-item__desc text16 lh150">да</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Размер, мм</span>
+                                                            <span class="props-item__desc text16 lh150">1 500 * 2 000</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Тираж, шт</span>
+                                                            <span class="props-item__desc text16 lh150">200</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="favourite-card">
+                                                <div class="favourite-card__top">
+                                                    <div class="favourite-card__img">
+                                                        <img src="img/favourite2.webp" alt="">
+                                                    </div>
+                                                    <div class="favourite-card__content">
+                                                        <div class="favourite-card__info">
+                                                            <div class="favourite-card__title">
+                                                                <div class="text20 medium-text">
+                                                                    Копирование чертежей
+                                                                </div>
+                                                            </div>
+                                                            <div class="badge">
+                                                                <span class="text12 bold-text">-20%</span>
+                                                            </div>
+                                                            <div class="favourite-btn _active">
+                                                                <button class="favourite-btn__icon">
+                                                                    <img class="_view1" src="img/heart2.svg" alt="">
+                                                                    <img class="_view2" src="img/heart.svg" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favourite-card__info2">
+
+                                                            <div class="text16 medium-text gray-text600">
+                                                                Цены могли измениться
+                                                            </div>
+
+
+                                                            <div class="favourite-field">
+                                                                <div class="loyalty-link__text">
+                                                                    <div class="text16">шт.</div>
+                                                                </div>
+                                                                <fieldset class="fg">
+                                                                    <input type="text" placeholder="3">
+                                                                </fieldset>
+                                                                <button class="loyalty-link__copy">
+                                                                    <img src="img/settings.svg" alt="">
+                                                                </button>
+                                                            </div>
+
+                                                            <button class="m-btn m-btn-small m-btn-secondary">
+                                                                <span>Быстрый заказ</span>
+                                                            </button>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="props">
+                                                    <button class="props__btn m-btn m-btn-medium m-btn-secondary-outline">
+                                                        <span class="_view1">Подробнее</span>
+                                                        <span class="_view2">Скрыть</span>
+                                                    </button>
+                                                    <div class="props__items">
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Услуга</span>
+                                                            <span class="props-item__desc text16 lh150">вставка в лайтбокс</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Печать,  dpi</span>
+                                                            <span class="props-item__desc text16 lh150"> 1 440</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Бэклит, г/м²</span>
+                                                            <span class="props-item__desc text16 lh150">260</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Накатка на монтажную плёнку</span>
+                                                            <span class="props-item__desc text16 lh150">да</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Планшетная резка</span>
+                                                            <span class="props-item__desc text16 lh150">простой контур (круг/овал)</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Выборка</span>
+                                                            <span class="props-item__desc text16 lh150">да</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Размер, мм</span>
+                                                            <span class="props-item__desc text16 lh150">1 500 * 2 000</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Тираж, шт</span>
+                                                            <span class="props-item__desc text16 lh150">200</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="favourite-card">
+                                                <div class="favourite-card__top">
+                                                    <div class="favourite-card__img">
+                                                        <img src="img/favourite2.webp" alt="">
+                                                    </div>
+                                                    <div class="favourite-card__content">
+                                                        <div class="favourite-card__info">
+                                                            <div class="favourite-card__title">
+                                                                <div class="text20 medium-text">
+                                                                    Копирование чертежей
+                                                                </div>
+                                                            </div>
+                                                            <div class="badge">
+                                                                <span class="text12 bold-text">-20%</span>
+                                                            </div>
+                                                            <div class="favourite-btn _active">
+                                                                <button class="favourite-btn__icon">
+                                                                    <img class="_view1" src="img/heart2.svg" alt="">
+                                                                    <img class="_view2" src="img/heart.svg" alt="">
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="favourite-card__info2">
+
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    48 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    44 ₽/шт.
+                                                                </div>
+                                                            </div>
+                                                            <div class="favourite-field">
+                                                                <div class="loyalty-link__text">
+                                                                    <div class="text16">шт.</div>
+                                                                </div>
+                                                                <fieldset class="fg">
+                                                                    <input type="text" placeholder="3">
+                                                                </fieldset>
+                                                                <button class="loyalty-link__copy">
+                                                                    <img src="img/settings.svg" alt="">
+                                                                </button>
+                                                            </div>
+
+
+                                                            <div class="product-card2__prices _last">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    48 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    44 ₽/шт.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="props">
+                                                    <button class="props__btn m-btn m-btn-medium m-btn-secondary-outline">
+                                                        <span class="_view1">Подробнее</span>
+                                                        <span class="_view2">Скрыть</span>
+                                                    </button>
+                                                    <div class="props__items">
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Услуга</span>
+                                                            <span class="props-item__desc text16 lh150">вставка в лайтбокс</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Печать,  dpi</span>
+                                                            <span class="props-item__desc text16 lh150"> 1 440</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Бэклит, г/м²</span>
+                                                            <span class="props-item__desc text16 lh150">260</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Накатка на монтажную плёнку</span>
+                                                            <span class="props-item__desc text16 lh150">да</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Планшетная резка</span>
+                                                            <span class="props-item__desc text16 lh150">простой контур (круг/овал)</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Выборка</span>
+                                                            <span class="props-item__desc text16 lh150">да</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Размер, мм</span>
+                                                            <span class="props-item__desc text16 lh150">1 500 * 2 000</span>
+                                                        </div>
+                                                        <div class="props-item">
+                                                            <span class="props-item__title text16 lh150">Тираж, шт</span>
+                                                            <span class="props-item__desc text16 lh150">200</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="loyalty-card">
-                                    <div class="loyalty-card__top">
-                                        <img src="img/group.svg" alt="" class="loyalty-card__icon">
-                                        <div class="text20 medium-text">
-                                            Реферальная система
-                                        </div>
-                                        <button data-modal="hintModal2" class="loyalty-card__hint">
-                                            <img src="img/hint.svg" alt="">
-                                        </button>
+                                <div class="favourite-products">
+                                    <div class="favourite-products__title text24 medium-text">
+                                        Товары
                                     </div>
-                                    <div class="text16 lh150 medium-text gray-text600">
-                                        Вы пригласили: 0
-                                    </div>
-                                    <div class="modal" id="hintModal2">
-                                        <div class="modal__bg _close-modal"></div>
-                                        <div class="modal__dialog">
-                                            <div class="modal__top">
-                                                <div class="text20 medium-text">
-                                                    Подсказка
+                                    <div class="favourite-group">
+                                        <div class="favourite-group__top">
+                                            <div class="text20 medium-text">
+                                                Изделия
+                                            </div>
+                                            <div class="favourite-group__nav">
+                                                <div class="favourite-group__num">
+                                                    <span class="text12 bold-text">8</span>
                                                 </div>
-                                                <button class="modal__close _close-modal">
-                                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M8.29266 8.29259C8.48019 8.10512 8.7345 7.99981 8.99966 7.99981C9.26483 7.99981 9.51914 8.10512 9.70666 8.29259L15.9997 14.5856L22.2927 8.29259C22.3849 8.19708 22.4953 8.1209 22.6173 8.06849C22.7393 8.01608 22.8705 7.9885 23.0033 7.98734C23.136 7.98619 23.2677 8.01149 23.3906 8.06177C23.5135 8.11205 23.6252 8.18631 23.7191 8.2802C23.813 8.37409 23.8872 8.48574 23.9375 8.60864C23.9878 8.73154 24.0131 8.86321 24.0119 8.99599C24.0108 9.12877 23.9832 9.25999 23.9308 9.382C23.8784 9.504 23.8022 9.61435 23.7067 9.70659L17.4137 15.9996L23.7067 22.2926C23.8888 22.4812 23.9896 22.7338 23.9873 22.996C23.9851 23.2582 23.8799 23.509 23.6945 23.6944C23.5091 23.8798 23.2583 23.985 22.9961 23.9873C22.7339 23.9895 22.4813 23.8888 22.2927 23.7066L15.9997 17.4136L9.70666 23.7066C9.51806 23.8888 9.26546 23.9895 9.00326 23.9873C8.74107 23.985 8.49025 23.8798 8.30485 23.6944C8.11944 23.509 8.01427 23.2582 8.01199 22.996C8.00971 22.7338 8.11051 22.4812 8.29266 22.2926L14.5857 15.9996L8.29266 9.70659C8.10519 9.51907 7.99988 9.26476 7.99988 8.99959C7.99988 8.73443 8.10519 8.48012 8.29266 8.29259V8.29259Z" fill="black" />
-                                                    </svg>
-                                                </button>
+                                                <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
                                             </div>
-                                            <div class="modal__content">
-                                                <div class="text16 lh150">
-                                                    Регистрация по реферальной ссылке дарит новому пользователю и вам 500 ₽ на персональный счёт.
-                                                    <br>
-                                                    Приглашайте друзей и знакомых по собственной реферальной ссылке и зарабатывайте неограниченное количество бонусов на счёт.
-                                                </div>
-                                            </div>
-                                            <div class="modal__bottom">
-                                                <button class="_close-modal m-btn m-btn-medium m-btn-primary">
-                                                    <span>Понятно</span>
-                                                </button>
+                                        </div>
+                                        <div class="favourite-group__bottom">
+                                            <div class="favourite-products__items grid-column4">
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product9.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    от 480 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    от 440 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product10.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Двусторонний баннер
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    694 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    564 ₽/шт.
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product13.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Магниты на автомобили
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    4836 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    4476 ₽/шт.
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product12.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Скатерти на стол
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    744 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    543 ₽/шт.
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product9.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Виниловый баннер
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    от 480 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    от 440 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product10.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Двусторонний баннер
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    694 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    564 ₽/шт.
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product13.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Магниты на автомобили
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    4836 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    4476 ₽/шт.
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product12.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Скатерти на стол
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    744 ₽/шт.
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    543 ₽/шт.
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="loyalty-link">
-                                        <div class="loyalty-link__text">
-                                            <div class="text16">https://mdmprint.ru/ref=</div>
+                                    <div class="favourite-group">
+                                        <div class="favourite-group__top">
+                                            <div class="text20 medium-text">
+                                                Материалы
+                                            </div>
+                                            <div class="favourite-group__nav">
+                                                <div class="favourite-group__num">
+                                                    <span class="text12 bold-text">8</span>
+                                                </div>
+                                                <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
+                                            </div>
                                         </div>
-                                        <fieldset class="fg">
-                                            <input type="text" placeholder="YUblkjs41">
-                                            <button class="loyalty-link__clear">
-                                                <img src="img/clear.svg" alt="">
-                                            </button>
-                                        </fieldset>
-                                        <button class="loyalty-link__copy">
-                                            <img src="img/copy.svg" alt="">
-                                        </button>
+                                        <div class="favourite-group__bottom">
+                                            <div class="favourite-products__items grid-column4">
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product14.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            CREALITY 3D Ender PLA
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    890 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    690 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product15.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            ELEGOO 1.75 мм PLA
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    5 411 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    3 787 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product16.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Коробка упаковочная SquareKraft
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    58 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    42 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product17.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Коробка упаковочная RQi
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    38 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    34 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favourite-group">
+                                        <div class="favourite-group__top">
+                                            <div class="text20 medium-text">
+                                                Оборудование
+                                            </div>
+                                            <div class="favourite-group__nav">
+                                                <div class="favourite-group__num">
+                                                    <span class="text12 bold-text">8</span>
+                                                </div>
+                                                <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
+                                            </div>
+                                        </div>
+                                        <div class="favourite-group__bottom">
+                                            <div class="favourite-products__items grid-column4">
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product18.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            CREALITY 3D Printer K1/K1-MAX 3D Printer
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    55 573 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    51 573 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product19.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            Flying Bear Ghost 6 3d Printer Fast Printing with High Precision Printers Direct Extruder Core XY Fuction Machine
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+
+                                                            <div class="text20 medium-text gray-text600">
+                                                                Нет в наличии
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product20.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            SV01 Pro Dual Z-axis Auto-Leveling FDM 3D Printer Metal Direct Drive Extruder Silent Board Larger Build Volume impresora 3d
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+
+                                                            <div class="text20 medium-text gray-text600">
+                                                                Нет в наличии
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                                <a href="" class="product-card _card _card1">
+                                                    <div class="_card1__img">
+                                                        <img src="img/product21.webp" alt="">
+                                                    </div>
+                                                    <div class="_card1__content">
+                                                        <div class="product-card__title text16 medium-text">
+                                                            FLYING BEAR Aone 2 Easy Leaning High Precision 3D Printer Machine DIY Kit Printing Size 190*190*190mm
+                                                        </div>
+
+                                                        <div class="product-card__bottom">
+
+                                                            <div class="product-card2__prices">
+                                                                <div class="product-card2__price1 text16 lh150 gray-text500">
+                                                                    19 435 ₽
+                                                                </div>
+                                                                <div class="product-card2__price2 text20 medium-text">
+                                                                    14 435 ₽
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="badge">
+                                                        <span class="text12 bold-text">-20%</span>
+                                                    </div>
+
+
+                                                    <div class="favourite-btn _active">
+                                                        <button class="favourite-btn__icon">
+                                                            <img class="_view1" src="img/heart2.svg" alt="">
+                                                            <img class="_view2" src="img/heart.svg" alt="">
+                                                        </button>
+                                                    </div>
+
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite-group">
+                                    <div class="favourite-group__top">
+                                        <div class="text24 medium-text">
+                                            Статьи
+                                        </div>
+                                        <div class="favourite-group__nav">
+                                            <div class="favourite-group__num">
+                                                <span class="text12 bold-text">8</span>
+                                            </div>
+                                            <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
+                                        </div>
+                                    </div>
+                                    <div class="favourite-group__bottom">
+                                        <div class="grid-column2">
+                                            <a href="" class="news-card _card _card1">
+                                                <div class="_card1__img">
+                                                    <img src="img/news.webp" alt="">
+                                                </div>
+                                                <div class="news-card__content _card1__content">
+                                                    <div class="news-card__title">
+                                                        <div class="text20 medium-text">
+                                                            День открытых дверей в МДМпринт
+                                                        </div>
+                                                    </div>
+                                                    <div class="news-card__info">
+                                                        <div class="news-card__info-item gray-text600">
+                                                            <span class="text16">12.04.2023</span>
+                                                        </div>
+                                                        <div class="news-card__info-item gray-text600">
+                                                            <img src="img/view.svg" alt="">
+                                                            <span class="text16">1 300</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="" class="news-card _card _card1">
+                                                <div class="_card1__img">
+                                                    <img src="img/news.webp" alt="">
+                                                </div>
+                                                <div class="news-card__content _card1__content">
+                                                    <div class="news-card__title">
+                                                        <div class="text20 medium-text">
+                                                            День открытых дверей в МДМпринт
+                                                        </div>
+                                                    </div>
+                                                    <div class="news-card__info">
+                                                        <div class="news-card__info-item gray-text600">
+                                                            <span class="text16">12.04.2023</span>
+                                                        </div>
+                                                        <div class="news-card__info-item gray-text600">
+                                                            <img src="img/view.svg" alt="">
+                                                            <span class="text16">1 300</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite-group">
+                                    <div class="favourite-group__top">
+                                        <div class="text24 medium-text">
+                                            Техпроцессы
+                                        </div>
+                                        <div class="favourite-group__nav">
+                                            <div class="favourite-group__num">
+                                                <span class="text12 bold-text">8</span>
+                                            </div>
+                                            <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
+                                        </div>
+                                    </div>
+                                    <div class="favourite-group__bottom">
+                                        <div class="grid-column4">
+                                            <div class="process-card _card _card1">
+                                                <div class="_card1__img">
+                                                    <img src="img/process.webp" alt="">
+                                                </div>
+                                                <div class="_card1__content">
+                                                    <div class="text16 medium-text">
+                                                        Блок, комплектовка подборкой
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="process-card _card _card1">
+                                                <div class="_card1__img">
+                                                    <img src="img/process2.webp" alt="">
+                                                </div>
+                                                <div class="_card1__content">
+                                                    <div class="text16 medium-text">
+                                                        Вакуумформовка
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="process-card _card _card1">
+                                                <div class="_card1__img">
+                                                    <img src="img/process3.webp" alt="">
+                                                </div>
+                                                <div class="_card1__content">
+                                                    <div class="text16 medium-text">
+                                                        Вёрстка
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="process-card _card _card1">
+                                                <div class="_card1__img">
+                                                    <img src="img/process4.webp" alt="">
+                                                </div>
+                                                <div class="_card1__content">
+                                                    <div class="text16 medium-text">
+                                                        Вёрстка полос электронная
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite-group">
+                                    <div class="favourite-group__top">
+                                        <div class="text24 medium-text">
+                                            Работы портфолио
+                                        </div>
+                                        <div class="favourite-group__nav">
+                                            <div class="favourite-group__num">
+                                                <span class="text12 bold-text">8</span>
+                                            </div>
+                                            <img src="img/arrow2.svg" alt="" class="favourite-group__arrow">
+                                        </div>
+                                    </div>
+                                    <div class="favourite-group__bottom">
+                                        <div class="grid-column4">
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-card__img">
+                                                    <img src="img/portfolio.webp" alt="">
+                                                </div>
+                                                <div class="portfolio-card__heart">
+                                                    <img src="img/heart.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-card__img">
+                                                    <img src="img/portfolio2.webp" alt="">
+                                                </div>
+                                                <div class="portfolio-card__heart">
+                                                    <img src="img/heart.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-card__img">
+                                                    <img src="img/portfolio3.webp" alt="">
+                                                </div>
+                                                <div class="portfolio-card__heart">
+                                                    <img src="img/heart.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                            <div class="portfolio-card">
+                                                <div class="portfolio-card__img">
+                                                    <img src="img/portfolio4.webp" alt="">
+                                                </div>
+                                                <div class="portfolio-card__heart">
+                                                    <img src="img/heart.svg" alt="">
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
